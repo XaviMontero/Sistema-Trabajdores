@@ -2,8 +2,11 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
@@ -120,7 +123,195 @@
       </VBox>
       <StackPane fx:id="deskotpPane" layoutX="258.0" prefHeight="762.0" prefWidth="1000.0" style="-fx-background-color: #02030A;">
          <children>
-            <Pane fx:id="pnRegistro" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #02030A;" />
+            <Pane fx:id="pnIngresoTrabajador" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #02030A;" stylesheets="@../css/style.css">
+               <children>
+                  <Label layoutX="14.0" layoutY="20.0" text="Ingreso Presonal" textFill="#e7e5e5">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="70.0" layoutY="95.0" prefHeight="30.0" prefWidth="256.0" promptText="Nombres Trabajador" style="-fx-prompt-text-fill: WHITE; -fx-font-size: 1.2em; -fx-text-fill: WHITE;" stylesheets="@../css/style.css" />
+                  <TextField layoutX="414.0" layoutY="92.0" prefHeight="30.0" prefWidth="189.0" promptText="Fecha Entrada" style="-fx-prompt-text-fill: WHITE; -fx-font-size: 1.2em; -fx-text-fill: WHITE;" stylesheets="@../css/style.css" />
+                  <Button layoutX="14.0" layoutY="674.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="156.0" text="Guardar" />
+                  <Button layoutX="203.0" layoutY="674.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="156.0" text="Dar de baja" />
+                  <Separator layoutX="14.0" layoutY="628.0" prefHeight="0.0" prefWidth="959.0" />
+                  <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="14.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/user.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="38.0" fitWidth="36.0" layoutX="354.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/date.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="14.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/lasname.png" />
+                     </image>
+                  </ImageView>
+                  <TextField layoutX="71.0" layoutY="165.0" prefHeight="30.0" prefWidth="256.0" promptText="Apelldios Trabajador" style="-fx-prompt-text-fill: WHITE; -fx-font-size: 1.2em; -fx-text-fill: WHITE;" stylesheets="@../css/style.css" />
+                  <TextField layoutX="414.0" layoutY="165.0" prefHeight="30.0" prefWidth="189.0" promptText="Direecion Trabajador" style="-fx-prompt-text-fill: WHITE; -fx-font-size: 1.2em; -fx-text-fill: WHITE;" stylesheets="@../css/style.css" />
+                  <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="351.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/diri.png" />
+                     </image>
+                  </ImageView>
+                  <Separator layoutX="14.0" layoutY="248.0" prefHeight="0.0" prefWidth="959.0" />
+                  <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="14.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/nati.png" />
+                     </image>
+                  </ImageView>
+                  <TextField layoutX="75.0" layoutY="285.0" prefHeight="30.0" prefWidth="256.0" promptText="Nacionalidad" style="-fx-prompt-text-fill: WHITE; -fx-font-size: 1.2em; -fx-text-fill: WHITE;" stylesheets="@../css/style.css" />
+                  <TextField layoutX="414.0" layoutY="285.0" prefHeight="30.0" prefWidth="189.0" promptText="Fecha de Nacimineto" style="-fx-prompt-text-fill: WHITE; -fx-font-size: 1.2em; -fx-text-fill: WHITE;" stylesheets="@../css/style.css" />
+                  <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="359.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/date.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="627.0" layoutY="291.0" prefHeight="26.0" prefWidth="89.0" style="-fx-prompt-text-fill: white;" text="dd-mm-yyyy" />
+                  <TextField layoutX="75.0" layoutY="410.0" prefHeight="30.0" prefWidth="256.0" promptText="Codigo Trabajador" style="-fx-prompt-text-fill: WHITE; -fx-font-size: 1.2em; -fx-text-fill: WHITE;" stylesheets="@../css/style.css" />
+                  <Separator layoutX="14.0" layoutY="380.0" prefHeight="0.0" prefWidth="959.0" />
+                  <Label layoutX="614.0" layoutY="97.0" prefHeight="26.0" prefWidth="89.0" style="-fx-prompt-text-fill: white;" text="dd-mm-yyyy" />
+                  <TextField layoutX="414.0" layoutY="410.0" prefHeight="30.0" prefWidth="189.0" promptText="Monto por hora" style="-fx-prompt-text-fill: WHITE; -fx-font-size: 1.2em; -fx-text-fill: WHITE;" stylesheets="@../css/style.css" />
+                  <TextField layoutX="75.0" layoutY="478.0" prefHeight="30.0" prefWidth="256.0" promptText="Celular Trabajo" style="-fx-prompt-text-fill: WHITE; -fx-font-size: 1.2em; -fx-text-fill: WHITE;" stylesheets="@../css/style.css" />
+                  <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="12.0" layoutY="396.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/code.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="12.0" layoutY="466.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/cel.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="359.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/money.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="pnRegistro" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #02030A;" stylesheets="@../css/style.css">
+               <children>
+                  <Label layoutX="14.0" layoutY="20.0" text="Registro de Horas" textFill="#e7e5e5">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="68.0" layoutY="222.0" prefHeight="30.0" prefWidth="256.0" promptText="Nombres Trabajador" style="-fx-prompt-text-fill: WHITE; -fx-font-size: 1.2em; -fx-text-fill: WHITE;" stylesheets="@../css/style.css" />
+                  <ImageView fitHeight="35.0" fitWidth="29.0" layoutX="14.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Search_52px.png" />
+                     </image>
+                  </ImageView>
+                  <TextField layoutX="55.0" layoutY="96.0" prefHeight="38.0" prefWidth="353.0" promptText="Buscar Trabajador" style="-fx-background-color: #02030A; -fx-font-size: 1.2em; -fx-border-color: #B7C3D7; -fx-border-radius: 2em;" />
+                  <TextField layoutX="412.0" layoutY="219.0" prefHeight="30.0" prefWidth="189.0" promptText="Fecha Entrada" style="-fx-prompt-text-fill: WHITE; -fx-font-size: 1.2em; -fx-text-fill: WHITE;" stylesheets="@../css/style.css" />
+                  <TextField layoutX="242.0" layoutY="370.0" prefHeight="92.0" prefWidth="189.0" promptText="Hora" style="-fx-prompt-text-fill: WHITE; -fx-text-fill: WHITE; -fx-font-size: 3em;" stylesheets="@../css/style.css" />
+                  <TextField layoutX="486.0" layoutY="370.0" prefHeight="92.0" prefWidth="336.0" promptText="Hora" style="-fx-prompt-text-fill: WHITE; -fx-text-fill: WHITE; -fx-font-size: 3em;" stylesheets="@../css/style.css" text="Minutos" />
+                  <Button layoutX="14.0" layoutY="674.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="156.0" text="Entrada" />
+                  <Button layoutX="203.0" layoutY="674.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="156.0" text="Salida" />
+                  <Label layoutX="444.0" layoutY="387.0" prefHeight="73.0" prefWidth="32.0" style="-fx-prompt-text-fill: WHITE; -fx-font-size: 2em;" text=":" />
+                  <Separator layoutX="14.0" layoutY="628.0" prefHeight="0.0" prefWidth="959.0" />
+                  <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="12.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/user.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="38.0" fitWidth="36.0" layoutX="352.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/date.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="42.0" fitWidth="60.0" layoutX="166.0" layoutY="403.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/time.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="12.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/user.png" />
+                     </image>
+                  </ImageView>
+                  <TextField layoutX="69.0" layoutY="292.0" prefHeight="30.0" prefWidth="256.0" promptText="Apelldios Trabajador" style="-fx-prompt-text-fill: WHITE; -fx-font-size: 1.2em; -fx-text-fill: WHITE;" stylesheets="@../css/style.css" />
+                  <TextField layoutX="412.0" layoutY="298.0" prefHeight="30.0" prefWidth="189.0" promptText="Direecion Trabajador" style="-fx-prompt-text-fill: WHITE; -fx-font-size: 1.2em; -fx-text-fill: WHITE;" stylesheets="@../css/style.css" />
+                  <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="349.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/diri.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="proFroma" layoutX="10.0" layoutY="10.0" prefHeight="309.0" prefWidth="450.0" style="-fx-background-color: #02030A;">
+               <children>
+                  <Label layoutX="57.0" layoutY="25.0" text="Pro Froma" textFill="#e7e5e5">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" layoutX="45.0" layoutY="72.0" prefHeight="92.0" prefWidth="710.0" spacing="50.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="92.0" prefWidth="142.0">
+                           <children>
+                              <TextField prefHeight="26.0" prefWidth="128.0" stylesheets="@../css/style.css" />
+                              <Label prefHeight="18.0" prefWidth="112.0" text="Nombre Producto" textFill="#e7e5e5" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <TextField stylesheets="@../css/style.css" />
+                              <Label prefHeight="21.0" prefWidth="111.0" text="Costo Unitario" textAlignment="CENTER" textFill="#e7e5e5" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <TextField stylesheets="@../css/style.css" />
+                              <Label text="Fecha Ingreso" textAlignment="CENTER" textFill="#e7e5e5" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <TextField stylesheets="@../css/style.css" />
+                              <Label text="Cantidad" textFill="#e7e5e5" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="184.0" layoutY="174.0" prefHeight="92.0" prefWidth="433.0" spacing="50.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="92.0" prefWidth="176.0">
+                           <children>
+                              <DatePicker prefHeight="26.0" prefWidth="171.0" />
+                              <Label prefHeight="18.0" prefWidth="112.0" text="Fecha Busqueda" textFill="#e7e5e5" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="92.0" prefWidth="230.0">
+                           <children>
+                              <DatePicker />
+                              <Label prefHeight="21.0" prefWidth="126.0" text="Fecha Fin Buqueda" textAlignment="CENTER" textFill="#e7e5e5" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="908.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Search_52px.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="771.0" layoutY="102.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="112.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20; -fx-background-color: transparent;" stylesheets="@../css/style.css" text="Almacenar" textAlignment="RIGHT" />
+                  <TextField layoutX="675.0" layoutY="29.0" prefHeight="28.0" prefWidth="269.0" promptText="search" style="-fx-background-color: #02030A; -fx-border-color: #B7C3D7; -fx-border-radius: 2em;" />
+                  <TableView layoutX="57.0" layoutY="266.0" prefHeight="392.0" prefWidth="777.0" stylesheets="@../css/style.css">
+                    <columns>
+                      <TableColumn prefWidth="113.00006103515625" text="Codigo Producto" />
+                      <TableColumn minWidth="0.0" prefWidth="179.00003051757812" text="Nombre Producto" />
+                        <TableColumn prefWidth="163.0" text="Precio Unitario" />
+                        <TableColumn prefWidth="135.0" text="Cantidad" />
+                        <TableColumn prefWidth="183.0" text="Total" />
+                    </columns>
+                  </TableView>
+               </children>
+            </Pane>
             <Pane fx:id="pnlOverview" prefHeight="309.0" prefWidth="450.0" style="-fx-background-color: #02030A;">
                <children>
                   <TextField layoutX="590.0" layoutY="47.0" prefHeight="28.0" prefWidth="269.0" promptText="search" style="-fx-background-color: #02030A; -fx-border-color: #B7C3D7; -fx-border-radius: 2em;" />
@@ -173,49 +364,37 @@
                         </VBox>
                      </children>
                   </HBox>
-                  <HBox alignment="CENTER_LEFT" layoutX="45.0" layoutY="178.0" prefHeight="42.0" prefWidth="794.0" spacing="80.0" style="-fx-background-color: #02030A;">
-                     <children>
-                        <Label prefHeight="21.0" prefWidth="51.0" text="Fecha" textFill="#e7e5e5">
-                           <HBox.margin>
-                              <Insets left="50.0" />
-                           </HBox.margin>
-                        </Label>
-                        <Label text="Nombre" textFill="#e7e5e5">
-                           <HBox.margin>
-                              <Insets />
-                           </HBox.margin>
-                        </Label>
-                        <Label text="Apellidos" textFill="#e7e5e5">
-                           <HBox.margin>
-                              <Insets />
-                           </HBox.margin>
-                        </Label>
-                        <Label text="Horas" textFill="#e7e5e5">
-                           <HBox.margin>
-                              <Insets />
-                           </HBox.margin>
-                        </Label>
-                        <Label text="Total del dia" textFill="#e7e5e5">
-                           <HBox.margin>
-                              <Insets />
-                           </HBox.margin>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <ScrollPane layoutX="14.0" layoutY="232.0" prefHeight="474.0" prefWidth="849.0" style="-fx-background-color: #02030A;" stylesheets="@../css/style.css">
-                     <content>
-                        <VBox fx:id="pnItems" prefHeight="475.0" prefWidth="828.0" spacing="5.0" style="-fx-background-color: #02030A;">
-                           <padding>
-                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                           </padding>
-                        </VBox>
-                     </content>
-                  </ScrollPane>
+                  <TableView fx:id="tablaPago" layoutX="121.0" layoutY="202.0" prefHeight="383.0" prefWidth="770.0" stylesheets="@../css/style.css">
+                    <columns>
+                      <TableColumn fx:id="codigo" prefWidth="101.99993896484375" text="Codigo" />
+                      <TableColumn fx:id="fecha" minWidth="0.0" prefWidth="125.99996948242188" text="Fecha" />
+                        <TableColumn fx:id="horaEntrada" prefWidth="120.0" text="Hora Entrada" />
+                        <TableColumn fx:id="horaSalida" prefWidth="132.0" text="Hora Salida" />
+                        <TableColumn fx:id="totalHoras" prefWidth="137.0" text="Total Horas" />
+                        <TableColumn fx:id="totalPago" prefWidth="150.0" text="Total Pago" />
+                    </columns>
+                  </TableView>
                   <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="823.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../images/icons8_Search_52px.png" />
                      </image>
                   </ImageView>
+                  <TextField layoutX="412.0" layoutY="598.0" prefHeight="53.0" prefWidth="189.0" promptText="Hora" style="-fx-prompt-text-fill: WHITE; -fx-text-fill: WHITE; -fx-font-size: 3em;" stylesheets="@../css/style.css" text="1500.00" />
+                  <Button fx:id="btnOverview1" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="407.0" layoutY="678.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="59.0" prefWidth="198.0" style="-fx-font-size: 1.3em;" stylesheets="@../css/style.css" text="Cancelar" textAlignment="CENTER" textFill="#e7e5e5">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons8_Home_32px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
                </children>
             </Pane>
          </children>

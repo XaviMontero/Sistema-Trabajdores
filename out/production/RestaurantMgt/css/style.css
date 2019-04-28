@@ -1,15 +1,18 @@
-.button
+.button {-fx-background-color : #05071F;-fx-text-fill : #e7e5e5;}  .button:hover{-fx-background-color : #10165F;}  .button:pressed {-fx-background-color : #1620A1;}
+.button-cancelar
 {
--fx-background-color : #05071F;
--fx-text-fill : #e7e5e5;
+    -fx-background-color : #7a2f38;
+    -fx-text-fill : #e7e5e5;
 }
-.button:hover{
--fx-background-color : #10165F;
+.button-cancelar:hover{
+    -fx-background-color : #b4424b;
 }
-.button:pressed
+.button-cancelar:pressed
 {
--fx-background-color : #1620A1;
+    -fx-background-color : #ff5b6c;
 }
+
+
 
 .scroll-pane {
     -fx-background-color: #02030A;

@@ -11,19 +11,30 @@ public class EntityTabalaPago {
     private SimpleStringProperty horaEntrada;
     private SimpleStringProperty horaSalida;
     private SimpleStringProperty totalHoras;
-
+    private SimpleStringProperty totalMinutos;
     private SimpleDoubleProperty totalPago;
 
-    public EntityTabalaPago(String fecha, String trasaccion, double totalPago, String horaEntrada, String horaSalida, String totalHoras) {
+    public EntityTabalaPago(String fecha, String trasaccion, double totalPago, String horaEntrada, String horaSalida, String totalHoras,String totalMinutos) {
         this.fecha = new SimpleStringProperty(fecha);
         this.codigo =new SimpleStringProperty(trasaccion) ;
         this.totalPago = new SimpleDoubleProperty(totalPago);
         this.horaEntrada=new SimpleStringProperty(horaEntrada);
         this.horaSalida=new SimpleStringProperty(horaSalida);
         this.totalHoras= new SimpleStringProperty(totalHoras);
-
+        this.totalMinutos = new SimpleStringProperty(totalMinutos);
     }
 
+    public String getTotalMinutos() {
+        return totalMinutos.get();
+    }
+
+    public SimpleStringProperty totalMinutosProperty() {
+        return totalMinutos;
+    }
+
+    public void setTotalMinutos(String totalMinutos) {
+        this.totalMinutos.set(totalMinutos);
+    }
 
     public SimpleStringProperty codigoProperty() {
         return codigo;
@@ -77,8 +88,6 @@ public class EntityTabalaPago {
         return fecha.get();
     }
 
-
-
     public void setFecha(String fecha) {
         this.fecha = new SimpleStringProperty(fecha);
     }
@@ -87,19 +96,13 @@ public class EntityTabalaPago {
         return codigo.get();
     }
 
-
-
     public void setCodigo(String codigo) {
         this.codigo = new SimpleStringProperty(codigo);
     }
 
-
-
     public double getTotalPago() {
         return totalPago.get();
     }
-
-
 
     public void setTotalPago(double totalPago) {
         this.totalPago = new SimpleDoubleProperty(totalPago);

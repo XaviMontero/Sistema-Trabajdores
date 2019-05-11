@@ -448,12 +448,18 @@ public class Controller implements Initializable {
                 respuestaMinutos = minutosSalida-minutosEntrada;
 
             }
-            trasTransaccionGlobal.setTotalHoras(respuestaHoras);
-            trasTransaccionGlobal.setTotalMinutos(respuestaMinutos);
-            GestorGlobal.update(trasTransaccionGlobal);
+            if (respuestaHoras >= 0) {
+                trasTransaccionGlobal.setTotalHoras(respuestaHoras);
+                trasTransaccionGlobal.setTotalMinutos(respuestaMinutos);
+                GestorGlobal.update(trasTransaccionGlobal);
 
-            MessageError.error355(root,rootPane,"A terminado trabajando Horas:  "+ trasTransaccionGlobal.getTotalHoras()+" Minutos: " +trasTransaccionGlobal.getTotalMinutos() +" ","Bienvenido");
-            limpiar();
+                MessageError.error355(root,rootPane,"A terminado trabajando Horas:  "+ trasTransaccionGlobal.getTotalHoras()+" Minutos: " +trasTransaccionGlobal.getTotalMinutos() +" ","Bienvenido");
+                limpiar();
+
+            }else {
+                MessageError.error355(root,rootPane,"Este trabajdor perdio sus horas por no marcar    "+ trabajadorGlobal.getNombreTra() ,"Trabajador no marco");
+
+            }
 
 
 

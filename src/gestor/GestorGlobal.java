@@ -13,10 +13,6 @@ public class GestorGlobal {
         session.getTransaction().commit();
         session.close();
 
-
-
-
-
     }
     public static void update(Object user){
         Session session = Global.CONEXION.factory.getCurrentSession();
@@ -24,11 +20,6 @@ public class GestorGlobal {
         session.update(user);
         session.getTransaction().commit();
         session.close();
-
-
-
-
-
     }
 
 }

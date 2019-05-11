@@ -7,110 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/RestaurantMgt.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/unnamed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/FastInfoset-1.2.15.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/JTattoo.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/MITyCLibAPI-1.0.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/MITyCLibCert-1.0.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/MITyCLibTSA-1.0.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/MITyCLibXADES-1.0.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/RestaurantMgt.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/RestaurantMgt.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/XadesBes.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/antlr-2.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/appframework-1.0.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/barcode4j-2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/batik-anim.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/batik-awt-util.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/batik-bridge.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/batik-css.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/batik-dom.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/batik-ext.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/batik-gvt.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/batik-parser.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/batik-script.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/batik-svg-dom.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/batik-svggen.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/batik-util.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/batik-xml.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/bcmail-jdk16-1.43.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/bcprov-jdk16-1.43.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/bctsp-jdk16-1.43.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/byte-buddy-1.9.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/charm-glisten-4.4.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/classmate-1.3.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/cliente-ws-offline.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/commons-beanutils-1.8.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/commons-collections-3.2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/commons-collections4-4.3-javadoc.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/commons-collections4-4.3-sources.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/commons-collections4-4.3-test-sources.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/commons-collections4-4.3-tests.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/commons-collections4-4.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/commons-digester-1.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/commons-io.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/commons-javaflow-20060411.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/commons-lang-2.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/commons-logging-1.1.1-api.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/commons-logging-1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/controlsfx-8.40.13.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/dom4j-2.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/firma-xades.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/fontawesomefx-8.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/fontawesomefx-commons-8.13.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/fontawesomefx-fontawesome-4.7.0-1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/groovy-all-1.7.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/groovy-all-1.8.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/hibernate-commons-annotations-5.1.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/hibernate-core-5.4.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/hsqldb-1_8_0_10.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/iText-2.1.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/istack-commons-runtime-3.0.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/jandex-2.0.5.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/jasperreports-4.1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/javafx-swt.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/javafx.base.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/javafx.controls.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/javafx.fxml.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/javafx.graphics.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/javafx.media.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/javafx.swing.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/javafx.web.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/javassist-3.24.0-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/javax.activation-api-1.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/javax.persistence-api-2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/jaxb-api-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/jaxb-runtime-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/jcalendarbutton-1.4.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/jfoenix-9.0.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/joda-time-2.9.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/mail.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/mysql-connector-java-8.0.13.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/napkinlaf-alpha001.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/recurrence-8.4.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/src.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/stax-ex-1.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/sun-security-jaas.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/swing-worker-1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/tradise-common.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/tradise-crypto-api.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/tradise-utils.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/tradise_crypto_transport.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/txw2-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/view-8.4.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/xml-apis-ext.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/xml-apis.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/xmlpull-1.1.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/xmlsec-1.4.2-ADSI-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/xstream-1.4.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RestaurantMgt/reportes/totalHorasjrxml.jasper" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantMgt/reportes/totalHorasjrxml.jasper" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RestaurantMgt/reportes/totalHorasjrxml.jrxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantMgt/reportes/totalHorasjrxml.jrxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reportes/totalHorasjrxml.jasper" beforeDir="false" afterPath="$PROJECT_DIR$/src/reportes/totalHorasjrxml.jasper" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reportes/totalHorasjrxml.jrxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/reportes/totalHorasjrxml.jrxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gestor/GestorGlobal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gestor/GestorGlobal.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -170,16 +67,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.project">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
+        <entry file="file://$PROJECT_DIR$/src/gestor/GestorGlobal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+            <state relative-caret-position="195">
+              <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -226,7 +121,6 @@
         <option value="$PROJECT_DIR$/src/gestor/GestorTrabajador.java" />
         <option value="$PROJECT_DIR$/src/model/Trabajador.java" />
         <option value="$PROJECT_DIR$/src/global/Global.java" />
-        <option value="$PROJECT_DIR$/src/gestor/GestorGlobal.java" />
         <option value="$PROJECT_DIR$/src/model/Transaccion.java" />
         <option value="$PROJECT_DIR$/src/entity/EntityTabalaPago.java" />
         <option value="$PROJECT_DIR$/src/gestor/GestorTransaccion.java" />
@@ -247,6 +141,7 @@
         <option value="$PROJECT_DIR$/src/global/Styles.java" />
         <option value="$PROJECT_DIR$/src/home/Controller.java" />
         <option value="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/src/gestor/GestorGlobal.java" />
       </list>
     </option>
   </component>
@@ -257,7 +152,7 @@
     </treeState>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="55" />
     <option name="y" value="27" />
     <option name="width" value="1910" />
@@ -285,18 +180,6 @@
               <item name="Sistema-Trabajdores" type="b2602c69:ProjectViewProjectNode" />
               <item name="Sistema-Trabajdores" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Sistema-Trabajdores" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Sistema-Trabajdores" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Sistema-Trabajdores" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Sistema-Trabajdores" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Sistema-Trabajdores" type="b2602c69:ProjectViewProjectNode" />
@@ -533,20 +416,20 @@
       <workItem from="1557600186321" duration="1230000" />
       <workItem from="1557606535256" duration="77000" />
       <workItem from="1557606717215" duration="803000" />
-      <workItem from="1557608528503" duration="942000" />
+      <workItem from="1557608528503" duration="973000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132972000" />
+    <option name="totallyTimeSpent" value="133003000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1920" height="994" extended-state="7" />
+    <frame x="0" y="25" width="1920" height="994" extended-state="6" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
-      <window_info content_ui="combo" id="Project" order="3" sideWeight="0.53125" visible="true" weight="0.1696905" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.53125" visible="true" weight="0.1696905" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Structure" order="5" sideWeight="0.46875" side_tool="true" weight="0.16488793" />
       <window_info id="Favorites" order="6" sideWeight="0.43013102" side_tool="true" weight="0.13820705" />
@@ -555,7 +438,7 @@
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.4994664" visible="true" weight="0.35532406" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.4994664" weight="0.35532406" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39907193" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -842,16 +725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gestor/GestorGlobal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/gestor/GestorTransaccion.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -1002,13 +875,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.project">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.project">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gestor/GestorGlobal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

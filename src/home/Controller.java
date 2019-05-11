@@ -2,8 +2,10 @@ package home;
 
 
 import entity.EntityTabalaPago;
+import entity.EntityTablaInforme;
 import error.MessageError;
 import gestor.GestorGlobal;
+import gestor.GestorProducto;
 import gestor.GestorTrabajador;
 import gestor.GestorTransaccion;
 import global.AutocompletionlTextField;
@@ -13,25 +15,33 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.Image;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.*;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
+import model.InformesProducto;
+import model.Producto;
 import model.Trabajador;
 import model.Transaccion;
 
+import javax.persistence.Entity;
+import java.io.IOException;
 import java.net.URL;
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Locale;
-import java.util.ResourceBundle;
+import java.text.*;
+import java.util.*;
 
 
 public class Controller implements Initializable {
+    DecimalFormatSymbols simbolo = new DecimalFormatSymbols();
+
 
     @FXML
     private VBox pnItems = null;
@@ -112,14 +122,50 @@ public class Controller implements Initializable {
     @FXML
     private StackPane deskotpPane;
     @FXML
-    private AutocompletionlTextField buscarTrabajador;
+    private  AutocompletionlTextField buscarTrabajador;
+
+    //Tabla informe Producto
 
 
+    @FXML
+    private TableView<EntityTablaInforme> tablaInfo;
+    @FXML
+    public TableColumn<EntityTablaInforme, String> codigoPorducto;
+    @FXML
+    public TableColumn<EntityTablaInforme, String> NombreProducto;
+    @FXML
+    public TableColumn<EntityTablaInforme, Double> precioUnitario;
+    @FXML
+    public TableColumn<EntityTablaInforme, Double> total;
+    @FXML
+    public TableColumn<EntityTablaInforme, String> cantidad;
+    @FXML
+    private Button almacenarVIstaProducto;
+    @FXML
+    private TextField nombreProduCar;
+    @FXML
+    private TextField costoUnitarioCar;
+    @FXML
+    private TextField fechaIngresoCar;
+    @FXML
+    private TextField cantidadCar;
+    @FXML
+    private  AutocompletionlTextField buscarProducto;
+    @FXML
+    private Button btnGuardarProductoInfo;
+    @FXML
+    private Button btnEliminarProducto;
+
+    double subTotal=0;
+    @FXML
+    private TextField subTotalProductos;
+    @FXML
+    private Button btnOverview1;
 
 
     //Ingreso de horas
     @FXML
-    private AutocompletionlTextField ingresoHoras;
+    private  AutocompletionlTextField ingresoHoras;
     @FXML
     private TextField nombreIngreso;
     @FXML
@@ -140,9 +186,14 @@ public class Controller implements Initializable {
     private TextField totalApagar;
 
 
+
+
+    Producto producto = null;
+    ArrayList <InformesProducto> informesProductos = new ArrayList<>();
+    DecimalFormat formateador;
     //Hora de pagar
     @FXML
-    private AutocompletionlTextField horaPagar;
+    private  AutocompletionlTextField horaPagar;
 
     public Trabajador trabajadorGlobal=null;
     public  Transaccion trasTransaccionGlobal =null;
@@ -151,14 +202,16 @@ public class Controller implements Initializable {
     ObservableList<EntityTabalaPago> tablaClientes = FXCollections.observableArrayList(
 
     );
+    ObservableList<EntityTablaInforme> tablaProductos = FXCollections.observableArrayList(
 
+    );
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        simbolo.setDecimalSeparator('.');
+         formateador = new DecimalFormat("######.##",simbolo);
         loadDatos();
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd", Locale.US);
         DateFormat hourFormat = new SimpleDateFormat("HH:mm:ss",Locale.US);
-
-
         buscarTrabajador.setOnKeyReleased(event -> {
             if (event.getCode() == KeyCode.ENTER){
                Trabajador trabajadorUpdate = GestorTrabajador.getCodigo(buscarTrabajador.getText());
@@ -180,8 +233,6 @@ public class Controller implements Initializable {
 
             }
         });
-
-
         ingresoHoras.setOnKeyReleased(keyEvent -> {
             if (keyEvent.getCode() == KeyCode.ENTER){
                 Trabajador trabajadorUpdate = GestorTrabajador.getCodigo(ingresoHoras.getText());
@@ -214,15 +265,12 @@ public class Controller implements Initializable {
             }
 
         });
-
-
-
-
         horaPagar.setOnKeyReleased(keyEvent -> {
             if (keyEvent.getCode() == KeyCode.ENTER){
                 int horasExtras=0;
                 int totalhoras=0;
                 Trabajador trabajadorUpdate = GestorTrabajador.getCodigo(horaPagar.getText());
+                tablaClientes.removeAll(tablaClientes);
                     for (Transaccion recuper : GestorTransaccion.getNombresTrabajadores(trabajadorUpdate.getCodigoTra())){
                         try {
                             tablaClientes.add(new EntityTabalaPago(  dateFormat.format(recuper.getFehca()),
@@ -242,15 +290,34 @@ public class Controller implements Initializable {
                     }
 
                       totalhoras = totalhoras + (horasExtras/60);
-                      double respuesta = totalhoras*trabajadorUpdate.getMontoHora();
+
+                        if(totalhoras > 40){
+                            totalhoras=40;
+                        }
+                MessageError.error355(root,rootPane,"Total de horas trabajadas es:  " +totalhoras ,"Bienvenido");
+
+
+                double respuesta = totalhoras*trabajadorUpdate.getMontoHora();
+
                       totalApagar.setText(String.valueOf(respuesta));
 
             }
                 });
+        buscarProducto.setOnKeyReleased(keyEvent -> {
+            if (keyEvent.getCode() == KeyCode.ENTER){
 
+                if(GestorProducto.getProducto(buscarProducto.getText())!=null){
+                    producto = GestorProducto.getProducto(buscarProducto.getText());
+                    nombreProduCar.setText(producto.getNombreProduc());
+                    fechaIngresoCar.setText(dateFormat.format(Global.getFechaActual()));
+                    costoUnitarioCar.setText(String.valueOf(producto.getPrecioUnita()));
+                }else {
+                    loadStage("/home/Productos.fxml");
 
-
-
+                }
+            }
+            buscarProducto.getEntries().addAll(GestorProducto.getNombreProductos());
+        });
     }
 
 
@@ -263,17 +330,63 @@ public class Controller implements Initializable {
         if (actionEvent.getSource() == btnOrders) {
             pnRegistro.toFront();
 
+
         }
 
         if (actionEvent.getSource() == btnCustomers) {
             proFroma.toFront();
 
+
         }
         if (actionEvent.getSource() == btnMenus) {
             pnIngresoTrabajador.toFront();
+        }
+        if (actionEvent.getSource() == btnPackages) {
+            loadStage("/home/Reportes.fxml");
+        }if (actionEvent.getSource() == btnOverview1) {
+
+            pagarHoras();
+        }
+
+    }
+
+    private void pagarHoras() {
+
+            Trabajador trabajadorUpdate = GestorTrabajador.getCodigo(horaPagar.getText());
+        try{
+            if (trabajadorUpdate !=null){
+              List <Transaccion> trans= GestorTransaccion.getNombresTrabajadores(trabajadorUpdate.getCodigoTra());
+                    if(trans!=null){
+                        for (Transaccion tras : trans){
+                            tras.setEstadoPago(true);
+                            GestorGlobal.update(tras);
+
+                        }
+                        MessageError.error355(root,rootPane,"Se le a pagado Exitosamente "  ,"Pago exitoso almacenado en Base ");
+                        tablaClientes.removeAll(tablaClientes);
+                        horaPagar.setText("");
+                    }else {
+                        MessageError.error355(root,rootPane,"Error no se a encontrado usuario  "+ "EEE00531" ,"El usuari no tiene dinero pendiente ");
+
+                    }
+
+                    }else {
+                       MessageError.error355(root,rootPane,"Error no se a encontrado usuario  "+ "EEE00532" ,"El usuari no tiene dinero pendiente ");
+
+            }
+
+        }catch ( NullPointerException ex){
+            MessageError.error355(root,rootPane,"El usuario no tiene dinero por pagar  "+ "EEE00532" ,"No encontramos  horas para ser pagadas :( ");
 
         }
 
+    }
+
+    public  void llamada(){
+   buscarTrabajador.getEntries().addAll(GestorTrabajador.getNombresTrabajadores());
+        ingresoHoras.getEntries().addAll(GestorTrabajador.getNombresTrabajadores());
+        horaPagar.getEntries().addAll(GestorTrabajador.getNombresTrabajadores());
+        buscarProducto.getEntries().addAll(GestorProducto.getNombreProductos());
     }
 
     @FXML
@@ -287,6 +400,8 @@ public class Controller implements Initializable {
 
 
     }
+
+
     public void cliksTrabajadoresHoras (ActionEvent actionEven){
 
 
@@ -370,6 +485,7 @@ public class Controller implements Initializable {
 
                         GestorGlobal.save(trabajador);
                         limpiar();
+                    llamada();
 
                 }
                 catch (Exception e)
@@ -434,9 +550,15 @@ public class Controller implements Initializable {
         totalPago.setCellValueFactory(new PropertyValueFactory<>("totalPago"));
         totalMinutos.setCellValueFactory(new PropertyValueFactory<>("totalMinutos"));
         tablaPago.setItems(tablaClientes);
-        buscarTrabajador.getEntries().addAll(GestorTrabajador.getNombresTrabajadores());
-        ingresoHoras.getEntries().addAll(GestorTrabajador.getNombresTrabajadores());
-        horaPagar.getEntries().addAll(GestorTrabajador.getNombresTrabajadores());
+
+        //Tabla Informe Productos
+        codigoPorducto.setCellValueFactory(new PropertyValueFactory<>("codigoPorducto"));
+        NombreProducto.setCellValueFactory(new PropertyValueFactory<>("NombreProducto"));
+        cantidad.setCellValueFactory(new PropertyValueFactory<EntityTablaInforme,String>("cantidad"));
+        precioUnitario.setCellValueFactory(new PropertyValueFactory<>("precioUnitario"));
+        total.setCellValueFactory(new PropertyValueFactory<>("total"));
+        tablaInfo.setItems(tablaProductos);
+
         nombreIngreso.setEditable(false);
         fechaIngreso.setEditable(false);
         apellidosIngreso.setEditable(false);
@@ -444,8 +566,93 @@ public class Controller implements Initializable {
         horaIngresoActual.setEditable(false);
         minutosIngresoActual.setEditable(false);
 
+        llamada();
 
 
 
+    }
+
+
+    public  void loadStage(String fxml) {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource(fxml));
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.getIcons().add(new Image("/images/logo.png"));
+            stage.initModality(Modality.APPLICATION_MODAL);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    public void cliksIngresoProducCarga (ActionEvent actionEvent){
+        if (actionEvent.getSource() == almacenarVIstaProducto){
+
+            if(GestorProducto.getProducto(buscarProducto.getText())!=null){
+              InformesProducto informesProducto = new InformesProducto();
+
+              //  System.out.println(df.format(number));
+
+                  if (!cantidadCar.getText().isEmpty()){
+                      try{
+                   int cantida =    Integer.parseInt(cantidadCar.getText());
+                    double precioUni =producto.getPrecioUnita();
+
+                   informesProducto.setCantidadPro(cantida);
+                   informesProducto.setPrecioUnita(precioUni );
+                   informesProducto.setFechaInfo(Global.getFechaActual());
+                   double total =  precioUni* cantida;
+                   double respuestaTrasformada = Double.parseDouble(formateador.format(total));
+                   informesProducto.setTotal(respuestaTrasformada);
+
+                    subTotal = subTotal +respuestaTrasformada;
+                    subTotalProductos.setText(formateador.format(subTotal));
+                    informesProducto.setProducto(producto);
+                    informesProducto.setNombreProduc(producto.getNombreProduc());
+                   informesProductos.add(informesProducto);
+                   tablaProductos.add(new EntityTablaInforme(String.valueOf(producto.getCodigoTra()),producto.getNombreProduc(),producto.getPrecioUnita(),String.valueOf(informesProducto.getCantidadPro()),respuestaTrasformada));
+                          cantidadCar.setText("");
+
+                      }catch (NumberFormatException ex){
+                          MessageError.error355(root,rootPane,"Ingrese numeros en la casilla cantidad   "+ "EEE00529" ,"Formato numero cantidad ");
+                      }
+                  }else{
+                      MessageError.error355(root,rootPane,"Error se encontro en blanco la casiilla cantidad   "+ "EEE00530" ,"Cantidad en blanco");
+                  }
+
+            }else {
+                MessageError.error355(root,rootPane,"Error No se encontro nigun Producto Almacenado en Storage  "+ "EEE00528" ,"Producto No existe");
+
+            }
+        }if (actionEvent.getSource()==btnEliminarProducto ){
+
+            if(!informesProductos.isEmpty()){
+                InformesProducto info = informesProductos.get(informesProductos.size()-1);
+                subTotal =subTotal-info.getTotal();
+
+                subTotalProductos.setText(formateador.format(subTotal));
+                tablaProductos.remove(tablaProductos.size()-1);
+                informesProductos.remove(informesProductos.size()-1);
+                MessageError.error355(root,rootPane,"Eliminacion de productos con exito  " ,"Producto eliminado  ");
+            }else {
+                MessageError.error355(root,rootPane,"NO existe producto almacenado en Storage   " ,"Producto no encontrado  ");
+
+            }
+
+        }if (actionEvent.getSource()== btnGuardarProductoInfo){
+            for (InformesProducto ifo :informesProductos){
+                GestorGlobal.save(ifo);
+
+            }
+
+            tablaProductos.removeAll(tablaProductos);
+            informesProductos.removeAll(informesProductos);
+            subTotal=0;
+            subTotalProductos.setText("");
+            MessageError.error355(root,rootPane,"Formulario almacenado correctamente  " ,"Se almacenado el informe correctamente   ");
+
+        }
     }
 }

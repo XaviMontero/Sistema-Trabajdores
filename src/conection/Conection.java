@@ -1,5 +1,7 @@
 package conection;
 
+import model.InformesProducto;
+import model.Producto;
 import model.Trabajador;
 import model.Transaccion;
 import org.hibernate.SessionFactory;
@@ -13,6 +15,9 @@ public class Conection {
                 .configure("hibernate.cfg.xml")
                 .addAnnotatedClass(Trabajador.class)
                 .addAnnotatedClass(Transaccion.class)
+                .addAnnotatedClass(Producto.class)
+                .addAnnotatedClass(InformesProducto.class)
+
                 .buildSessionFactory();
     }
 

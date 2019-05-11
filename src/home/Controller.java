@@ -347,8 +347,14 @@ public class Controller implements Initializable {
 
             pagarHoras();
         }
+        if (actionEvent.getSource() == btnSignout) {
 
+
+        }
     }
+
+
+
 
     private void pagarHoras() {
 

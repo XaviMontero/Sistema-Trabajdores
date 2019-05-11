@@ -1,6 +1,6 @@
-# RestaurantMgt Sample UI JavaFX
+# Sistema de control de horarios para personal 
 
-This project is purely JavaFX - it gives you a basis of what to do regarding your projects, **Note:** it is not a fully fledged system.
+Este proyecto esta resuelto en JavaFx,con su base de datos en mysql 
 
 Dark Mode
 

@@ -19,7 +19,7 @@
 		<![CDATA[SELECT T.codigoTra ,T.nombreTra,T.apellidoTra ,IF(sum(totalHoras) > 40, 40, sum(totalHoras)) horasT FROM montesdeoca.Transaccion H 
 Inner join montesdeoca.Trabajador T on  T.codigoTra=H.codigoTra 
 where T.fechaEntradaTra between  $P{fechaInicio}    and   $P{fechaFin} 
-group by T.codgioTrabajador;]]>
+group by T.codigoTra;]]>
 	</queryString>
 	<field name="codigoTra" class="java.lang.Integer">
 		<property name="com.jaspersoft.studio.field.label" value="codigoTra"/>

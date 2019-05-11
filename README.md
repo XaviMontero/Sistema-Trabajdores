@@ -8,4 +8,9 @@ Dark Mode
 
 Light Mode
 
-![](https://github.com/k33ptoo/RestaurantMgtSampleUI/blob/master/imgs/sc.PNG)
+![](https://github.com/XaviMontero/Sistema-Trabajdores/blob/master/imgs/Captura%20de%20pantalla%20de%202019-05-11%2016-35-03.png)
+
+![](https://github.com/XaviMontero/Sistema-Trabajdores/blob/master/imgs/Captura%20de%20pantalla%20de%202019-05-11%2016-35-21.png)
+
+![](https://github.com/XaviMontero/Sistema-Trabajdores/blob/master/imgs/Captura%20de%20pantalla%20de%202019-05-11%2016-35-29.png)
+

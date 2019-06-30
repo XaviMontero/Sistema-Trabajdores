@@ -93,6 +93,8 @@ public class Repor {
 
         } catch (SQLException ex) {
         } catch (ClassNotFoundException ex) {
+        }catch (NullPointerException ex){
+
         }
 
     }

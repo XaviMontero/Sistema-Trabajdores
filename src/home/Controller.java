@@ -69,6 +69,8 @@ public class Controller implements Initializable {
     @FXML
     private Pane pnRegistro;
     @FXML
+    private Pane pnFactura;
+    @FXML
     private Pane pnlOverview;
     @FXML
     private Pane proFroma;
@@ -285,8 +287,6 @@ public class Controller implements Initializable {
                                     "  asegurese que el trabajador marque su hora de salida, en caso contrario se acumulara este dia  a su siguente rol de pago  ","El usuario esta trabajando");
                         }
 
-
-
                     }
 
                       totalhoras = totalhoras + (horasExtras/60);
@@ -348,8 +348,10 @@ public class Controller implements Initializable {
             pagarHoras();
         }
         if (actionEvent.getSource() == btnSignout) {
+            System.exit(0);
 
-
+        }if (actionEvent.getSource()==btnSettings){
+            pnFactura.toFront();
         }
     }
 
@@ -439,11 +441,11 @@ public class Controller implements Initializable {
             trasTransaccionGlobal.setHoraSalida(Global.getHoraActual());
 
             int horaEntrada = Global.obtenerhoras(trasTransaccionGlobal.getHoraEntrada());
-            int horaSalida = Global.obtenerhoras(Global.getHoraActual());
+            int horaSalida = Integer.valueOf(horaIngresoActual.getText()) ;
             int respuestaHoras = horaSalida-horaEntrada;
 
-            int minutosEntrada = Global.obtenerMinutos(trasTransaccionGlobal.getHoraEntrada());
-            int minutosSalida = Global.obtenerMinutos(Global.getHoraActual());
+            int minutosEntrada =Global.obtenerMinutos(trasTransaccionGlobal.getHoraEntrada());
+            int minutosSalida = Integer.valueOf(minutosIngresoActual.getText());
             int respuestaMinutos = 0;
 
             if(minutosEntrada >= minutosSalida){
@@ -540,7 +542,7 @@ public class Controller implements Initializable {
     private boolean validarDatos() {
 
         if (!txtNombre.getText().isEmpty() && !txtApelldio.getText().isEmpty() && !txtDireccion.getText().isEmpty()
-                && !txtMontoHora.getText().isEmpty()&& !txtCelular.getText().isEmpty() && !txtNombre.getText().isEmpty()
+                && !txtMontoHora.getText().isEmpty()&& !txtCelular.getText().isEmpty()
                 && !txtNacionalidad.getText().isEmpty() && txtFechaEntrada.getValue() != null
                 && txtFechaNacimiento.getValue()!=null && !txtCodigo.getText().isEmpty() ){
 
@@ -575,8 +577,7 @@ public class Controller implements Initializable {
         fechaIngreso.setEditable(false);
         apellidosIngreso.setEditable(false);
         direccionIngreso.setEditable(false);
-        horaIngresoActual.setEditable(false);
-        minutosIngresoActual.setEditable(false);
+
 
         llamada();
 

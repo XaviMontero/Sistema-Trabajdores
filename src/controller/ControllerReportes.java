@@ -71,6 +71,8 @@ public class ControllerReportes implements Initializable {
                 e.printStackTrace();
             } catch (JRException e) {
                 e.printStackTrace();
+            } catch ( NullPointerException ex){
+                ex.printStackTrace();
             }
 
         }

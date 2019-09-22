@@ -1,6 +1,7 @@
 package reportes;
 
 import conection.Conexion;
+import model.FacturaCabecera;
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JasperFillManager;
 import net.sf.jasperreports.engine.JasperPrint;
@@ -14,7 +15,7 @@ import java.util.Map;
 public class Repor {
 
 
-    public static void SimpleReport(Date fechaInicio,Date fechaFin,double total ) throws JRException {
+    public static void SimpleReport(Date fechaInicio, Date fechaFin, double total) throws JRException {
         try {
             Conexion co = new Conexion();
 
@@ -22,28 +23,25 @@ public class Repor {
             JasperPrint jasperPrint;
             java.io.File urlreporte = null;
             Map<String, Object> params = new HashMap<String, Object>();
-            params.put("fechaInicio",fechaInicio);
-            params.put("fechaFIn",fechaFin);
-            params.put("total",total);
-
+            params.put("fechaInicio", fechaInicio);
+            params.put("fechaFIn", fechaFin);
+            params.put("total", total);
 
 
             try {
                 urlreporte = new java.io.File("src/reportes/Cherry.jasper");
             } catch (Exception ex) {
-                System.out.println("No encuentro el archivo del reporte maestro." +ex);
+                System.out.println("No encuentro el archivo del reporte maestro." + ex);
             }
             if (urlreporte == null) {
-                System.out.println("No encuentro el archivo del reporte maestro." );
+                System.out.println("No encuentro el archivo del reporte maestro.");
 
             }
 
 
+            jasperPrint = JasperFillManager.fillReport(urlreporte.getPath(), params, co.obtener());
 
-
-            jasperPrint = JasperFillManager.fillReport(urlreporte.getPath(),params,co.obtener() );
-
-            JasperViewer visor=new JasperViewer(jasperPrint,false);
+            JasperViewer visor = new JasperViewer(jasperPrint, false);
             visor.setTitle("Cajas de ahorro - GSF");
             visor.setVisible(true);
 
@@ -55,7 +53,8 @@ public class Repor {
         }
 
     }
-    public static void SimpleReportHoras(Date fechaInicio,Date fechaFin ) throws JRException {
+
+    public static void SimpleReportHoras(Date fechaInicio, Date fechaFin) throws JRException {
         try {
             Conexion co = new Conexion();
 
@@ -63,28 +62,24 @@ public class Repor {
             JasperPrint jasperPrint;
             java.io.File urlreporte = null;
             Map<String, Object> params = new HashMap<String, Object>();
-            params.put("fechaInicio",fechaInicio);
-            params.put("fechaFin",fechaFin);
-
-
+            params.put("fechaInicio", fechaInicio);
+            params.put("fechaFin", fechaFin);
 
 
             try {
                 urlreporte = new java.io.File("src/reportes/totalHorasjrxml.jasper");
             } catch (Exception ex) {
-                System.out.println("No encuentro el archivo del reporte maestro." +ex);
+                System.out.println("No encuentro el archivo del reporte maestro." + ex);
             }
             if (urlreporte == null) {
-                System.out.println("No encuentro el archivo del reporte de horas ." );
+                System.out.println("No encuentro el archivo del reporte de horas .");
 
             }
 
 
+            jasperPrint = JasperFillManager.fillReport(urlreporte.getPath(), params, co.obtener());
 
-
-            jasperPrint = JasperFillManager.fillReport(urlreporte.getPath(),params,co.obtener() );
-
-            JasperViewer visor=new JasperViewer(jasperPrint,false);
+            JasperViewer visor = new JasperViewer(jasperPrint, false);
             visor.setTitle("COnstruccion- GSF");
             visor.setVisible(true);
 
@@ -93,11 +88,51 @@ public class Repor {
 
         } catch (SQLException ex) {
         } catch (ClassNotFoundException ex) {
-        }catch (NullPointerException ex){
+        } catch (NullPointerException ex) {
 
         }
 
     }
+    public static void SimpleReportFacturas(FacturaCabecera facturaCabecera) throws JRException {
+        try {
+            Conexion co = new Conexion();
 
+
+            JasperPrint jasperPrint;
+            java.io.File urlreporte = null;
+            Map<String, Object> params = new HashMap<String, Object>();
+            params.put("nombre", facturaCabecera.getNombreCliente());
+            params.put("direccion", facturaCabecera.getDireccionCliente());
+            params.put("telefono", facturaCabecera.getTelefonoCliente());
+            params.put("code", facturaCabecera.getIdFactura());
+            params.put("subtotal" ,"Sub total: "+facturaCabecera.getSubTotal());
+
+            try {
+                urlreporte = new java.io.File("src/reportes/factura.jasper");
+            } catch (Exception ex) {
+                System.out.println("No encuentro el archivo del reporte maestro." + ex);
+            }
+            if (urlreporte == null) {
+                System.out.println("No encuentro el archivo del reporte de horas .");
+
+            }
+
+
+            jasperPrint = JasperFillManager.fillReport(urlreporte.getPath(), params, co.obtener());
+
+            JasperViewer visor = new JasperViewer(jasperPrint, false);
+            visor.setTitle("COnstruccion- GSF");
+            visor.setVisible(true);
+
+
+            // Compile jrxml file.
+
+        } catch (SQLException ex) {
+        } catch (ClassNotFoundException ex) {
+        } catch (NullPointerException ex) {
+
+        }
+
+    }
 
 }

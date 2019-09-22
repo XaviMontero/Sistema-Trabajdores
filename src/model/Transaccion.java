@@ -9,26 +9,26 @@ import java.util.Date;
 public class Transaccion {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
-    private  int codigoTransaccion;
+    private int codigoTransaccion;
     @Column
     private Date fehca;
     @Column
     private Date horaEntrada;
     @Column
-    private  Date horaSalida;
+    private Date horaSalida;
     @Column
-    private  int  totalHoras;
+    private int totalHoras;
     @Column
-    private  int  totalMinutos;
+    private int totalMinutos;
     @Column
-    private  boolean estadoPago;
+    private boolean estadoPago;
 
 
-    @ManyToOne(cascade= {CascadeType.PERSIST, CascadeType.MERGE,
+    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE,
             CascadeType.DETACH, CascadeType.REFRESH})
-    @JoinColumn(name="codigoTra")
+    @JoinColumn(name = "codigoTra")
     private Trabajador trabajador;
 
     public Transaccion() {

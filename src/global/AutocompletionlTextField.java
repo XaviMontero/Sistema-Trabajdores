@@ -37,7 +37,6 @@ public class AutocompletionlTextField extends TextField {
      */
 
 
-
     /**
      * "Suggestion" specific listners
      */
@@ -114,5 +113,7 @@ public class AutocompletionlTextField extends TextField {
      *
      * @return The existing autocomplete entries.
      */
-    public SortedSet<String> getEntries() { return entries; }
+    public SortedSet<String> getEntries() {
+        return entries;
+    }
 }

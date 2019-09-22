@@ -1,7 +1,6 @@
 package entity;
 
 import javafx.beans.property.SimpleDoubleProperty;
-import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 
 public class EntityTablaInforme {
@@ -13,7 +12,7 @@ public class EntityTablaInforme {
 
     public EntityTablaInforme(String codigoPorducto, String nombreProducto, double precioUnitario, String cantidad, double total) {
         String str;
-        this.codigoPorducto =  new SimpleStringProperty(codigoPorducto);
+        this.codigoPorducto = new SimpleStringProperty(codigoPorducto);
         NombreProducto = new SimpleStringProperty(nombreProducto);
         this.precioUnitario = new SimpleDoubleProperty(precioUnitario);
         this.cantidad = new SimpleStringProperty(cantidad);
@@ -25,59 +24,59 @@ public class EntityTablaInforme {
         return codigoPorducto.get();
     }
 
-    public SimpleStringProperty codigoPorductoProperty() {
-        return codigoPorducto;
-    }
-
     public void setCodigoPorducto(String codigoPorducto) {
         this.codigoPorducto.set(codigoPorducto);
+    }
+
+    public SimpleStringProperty codigoPorductoProperty() {
+        return codigoPorducto;
     }
 
     public String getNombreProducto() {
         return NombreProducto.get();
     }
 
-    public SimpleStringProperty nombreProductoProperty() {
-        return NombreProducto;
-    }
-
     public void setNombreProducto(String nombreProducto) {
         this.NombreProducto.set(nombreProducto);
+    }
+
+    public SimpleStringProperty nombreProductoProperty() {
+        return NombreProducto;
     }
 
     public double getPrecioUnitario() {
         return precioUnitario.get();
     }
 
-    public SimpleDoubleProperty precioUnitarioProperty() {
-        return precioUnitario;
-    }
-
     public void setPrecioUnitario(double precioUnitario) {
         this.precioUnitario.set(precioUnitario);
+    }
+
+    public SimpleDoubleProperty precioUnitarioProperty() {
+        return precioUnitario;
     }
 
     public String getCantidad() {
         return cantidad.get();
     }
 
-    public SimpleStringProperty cantidadProperty() {
-        return cantidad;
-    }
-
     public void setCantidad(String cantidad) {
         this.cantidad.set(cantidad);
+    }
+
+    public SimpleStringProperty cantidadProperty() {
+        return cantidad;
     }
 
     public double getTotal() {
         return total.get();
     }
 
-    public SimpleDoubleProperty totalProperty() {
-        return total;
-    }
-
     public void setTotal(double total) {
         this.total.set(total);
+    }
+
+    public SimpleDoubleProperty totalProperty() {
+        return total;
     }
 }

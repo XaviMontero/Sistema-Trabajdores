@@ -8,31 +8,36 @@ import java.util.List;
 @Table
 public class Trabajador {
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
-    private  int codigoTra;
+    private int codigoTra;
     @Column
-    private  String nombreTra;
+    private String nombreTra;
     @Column
-    private  String apellidoTra;
+    private String apellidoTra;
     @Column
-    private  String direccionTra;
+    private String direccionTra;
     @Column
-    private  Date fechaEntradaTra;
+    private Date fechaEntradaTra;
     @Column
-    private  String nacionalidadTra;
+    private String nacionalidadTra;
     @Column
-    private  String codgioTrabajador;
+    private String codgioTrabajador;
     @Column
-    private  double montoHora;
+    private double montoHora;
     @Column
-    private  String celularTrabajo;
+    private String celularTrabajo;
     @Column
-    private  boolean estadoTrabajador;
+    private boolean estadoTrabajador;
 
 
     @OneToMany(fetch = FetchType.LAZY)
     private List<Transaccion> transaccions;
+
+    public Trabajador() {
+
+
+    }
 
     public boolean isEstadoTrabajador() {
         return estadoTrabajador;
@@ -40,11 +45,6 @@ public class Trabajador {
 
     public void setEstadoTrabajador(boolean estadoTrabajador) {
         this.estadoTrabajador = estadoTrabajador;
-    }
-
-    public Trabajador() {
-
-
     }
 
     public List<Transaccion> getTransaccions() {

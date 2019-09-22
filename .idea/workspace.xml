@@ -7,16 +7,67 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gestor/GestorFactura.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/FacturaCabecera.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/FacturaDetalle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RestaurantMgt/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/RestaurantMgt.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/RestaurantMgt/RestaurantMgt.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantMgt/conection/Conection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantMgt/conection/Conection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantMgt/conection/Conexion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantMgt/conection/Conexion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantMgt/controller/ControllerProducto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantMgt/controller/ControllerProducto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantMgt/controller/ControllerReportes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantMgt/controller/ControllerReportes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantMgt/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantMgt/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantMgt/entity/EntityTabalaPago.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantMgt/entity/EntityTabalaPago.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantMgt/entity/EntityTablaInforme.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantMgt/entity/EntityTablaInforme.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantMgt/error/MessageError.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantMgt/error/MessageError.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantMgt/gestor/GestorGlobal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantMgt/gestor/GestorGlobal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantMgt/gestor/GestorProducto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantMgt/gestor/GestorProducto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantMgt/gestor/GestorTrabajador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantMgt/gestor/GestorTrabajador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantMgt/gestor/GestorTransaccion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantMgt/gestor/GestorTransaccion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantMgt/global/AutocompletionlTextField.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantMgt/global/AutocompletionlTextField.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantMgt/global/Global.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantMgt/global/Global.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantMgt/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantMgt/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RestaurantMgt/home/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantMgt/home/Controller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RestaurantMgt/home/Home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantMgt/home/Home.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantMgt/home/Item.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantMgt/home/Item.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantMgt/home/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantMgt/home/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantMgt/home/Productos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantMgt/home/Productos.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantMgt/home/Registro.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantMgt/home/Registro.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantMgt/home/Reportes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantMgt/home/Reportes.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantMgt/model/Producto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantMgt/model/Producto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantMgt/model/Trabajador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantMgt/model/Trabajador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantMgt/reportes/Cherry.jrxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantMgt/reportes/Cherry.jrxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantMgt/reportes/Repor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantMgt/reportes/Repor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantMgt/reportes/totalHorasjrxml.jrxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantMgt/reportes/totalHorasjrxml.jrxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/conection/Conection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/conection/Conection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/conection/Conexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/conection/Conexion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/ControllerProducto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ControllerProducto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/ControllerReportes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ControllerReportes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/EntityTabalaPago.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/EntityTabalaPago.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/EntityTablaInforme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/EntityTablaInforme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/error/MessageError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/error/MessageError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gestor/GestorGlobal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gestor/GestorGlobal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gestor/GestorProducto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gestor/GestorProducto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gestor/GestorTrabajador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gestor/GestorTrabajador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gestor/GestorTransaccion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gestor/GestorTransaccion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/global/AutocompletionlTextField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/global/AutocompletionlTextField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/global/Global.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/global/Global.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/global/Styles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/global/Styles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/home/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/home/Home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/Home.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/home/Item.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/Item.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/home/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/home/Productos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/Productos.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/home/Registro.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/Registro.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/home/Reportes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/Reportes.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/InformesProducto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/InformesProducto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Producto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Trabajador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Trabajador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Transaccion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Transaccion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reportes/Cherry.jrxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/reportes/Cherry.jrxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reportes/Repor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/reportes/Repor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reportes/totalHorasjrxml.jasper" beforeDir="false" afterPath="$PROJECT_DIR$/src/reportes/totalHorasjrxml.jasper" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reportes/totalHorasjrxml.jrxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/reportes/totalHorasjrxml.jrxml" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -30,6 +81,20 @@
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="DebuggerManager">
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true" converted="true">
@@ -77,30 +142,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/home/Home.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
-              <caret line="498" column="18" lean-forward="true" selection-start-line="498" selection-start-column="18" selection-end-line="498" selection-end-column="18" />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/home/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="353" column="32" selection-start-line="353" selection-start-column="32" selection-end-line="353" selection-end-column="32" />
+            <state relative-caret-position="299">
+              <caret line="62" selection-start-line="62" selection-end-line="62" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/reportes/Repor.java">
+        <entry file="file://$PROJECT_DIR$/src/home/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-52">
-              <caret line="72" column="82" selection-start-line="72" selection-start-column="82" selection-end-line="72" selection-end-column="82" />
+            <state relative-caret-position="-28">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/controller/ControllerReportes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="271">
+              <caret line="94" column="13" selection-start-line="94" selection-start-column="13" selection-end-line="94" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,10 +176,84 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/Nombres.java">
+        <entry file="file://$PROJECT_DIR$/src/gestor/GestorFactura.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="345">
+              <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1#27#0" expanded="true" />
+                <element signature="e#1#57#0" expanded="true" />
+                <element signature="e#1#58#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/reportes/Repor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="106" column="33" selection-start-line="106" selection-start-column="33" selection-end-line="106" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/reportes/factura.jrxml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gestor/GestorTrabajador.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="29" column="2" lean-forward="true" selection-start-line="29" selection-start-column="2" selection-end-line="44" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1#22#0" expanded="true" />
+                <element signature="e#1#74#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/InformesProducto.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gestor/GestorProducto.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-358">
+              <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1#54#0" expanded="true" />
+                <element signature="e#1#20#0" expanded="true" />
+                <element signature="e#2#87#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/home/Home.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6720">
+              <caret line="448" column="155" selection-start-line="448" selection-start-column="132" selection-end-line="448" selection-end-column="155" />
             </state>
           </provider>
         </entry>
@@ -132,6 +273,13 @@
     <findStrings>
       <find>pn</find>
       <find>butto</find>
+      <find>informesProductos</find>
+      <find>buscarProducto</find>
+      <find>codigoPorducto</find>
+      <find>precioUnitario1</find>
+      <find>tablaInfo1</find>
+      <find>btnGuardarFactura</find>
+      <find>GestorPro</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -158,16 +306,10 @@
         <option value="$PROJECT_DIR$/src/global/AutoCompleteTextField.java" />
         <option value="$PROJECT_DIR$/src/gestor/GestorTrabajador.java" />
         <option value="$PROJECT_DIR$/src/model/Trabajador.java" />
-        <option value="$PROJECT_DIR$/src/global/Global.java" />
         <option value="$PROJECT_DIR$/src/model/Transaccion.java" />
-        <option value="$PROJECT_DIR$/src/entity/EntityTabalaPago.java" />
         <option value="$PROJECT_DIR$/src/gestor/GestorTransaccion.java" />
         <option value="$PROJECT_DIR$/src/home/Productos.fxml" />
-        <option value="$PROJECT_DIR$/src/model/Producto.java" />
         <option value="$PROJECT_DIR$/src/model/InformesProducto.java" />
-        <option value="$PROJECT_DIR$/src/conection/Conection.java" />
-        <option value="$PROJECT_DIR$/src/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/controller/ControllerProducto.java" />
         <option value="$PROJECT_DIR$/src/entity/EntityTablaInforme.java" />
         <option value="$PROJECT_DIR$/src/home/Reportes.fxml" />
         <option value="$PROJECT_DIR$/src/conection/Conexion.java" />
@@ -175,12 +317,21 @@
         <option value="$PROJECT_DIR$/src/home/Main.java" />
         <option value="$PROJECT_DIR$/src/global/Styles.java" />
         <option value="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
-        <option value="$PROJECT_DIR$/src/gestor/GestorGlobal.java" />
-        <option value="$PROJECT_DIR$/src/controller/ControllerReportes.java" />
         <option value="$PROJECT_DIR$/src/reportes/totalHorasjrxml.jrxml" />
-        <option value="$PROJECT_DIR$/src/reportes/Repor.java" />
-        <option value="$PROJECT_DIR$/src/home/Controller.java" />
+        <option value="$PROJECT_DIR$/src/entity/EntityTabalaPago.java" />
+        <option value="$PROJECT_DIR$/src/model/Producto.java" />
+        <option value="$PROJECT_DIR$/src/conection/Conection.java" />
+        <option value="$PROJECT_DIR$/src/model/FacturaDetalle.java" />
+        <option value="$PROJECT_DIR$/src/global/Global.java" />
+        <option value="$PROJECT_DIR$/src/model/FacturaCabecera.java" />
+        <option value="$PROJECT_DIR$/src/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/controller/ControllerProducto.java" />
+        <option value="$PROJECT_DIR$/src/gestor/GestorGlobal.java" />
         <option value="$PROJECT_DIR$/src/home/Home.fxml" />
+        <option value="$PROJECT_DIR$/src/reportes/Repor.java" />
+        <option value="$PROJECT_DIR$/src/gestor/GestorFactura.java" />
+        <option value="$PROJECT_DIR$/src/home/Controller.java" />
+        <option value="$PROJECT_DIR$/src/controller/ControllerReportes.java" />
       </list>
     </option>
   </component>
@@ -191,10 +342,10 @@
     </treeState>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="20" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-71" />
     <option name="y" value="27" />
-    <option name="width" value="1900" />
+    <option name="width" value="1910" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -206,6 +357,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -222,14 +374,30 @@
             <path>
               <item name="Sistema-Trabajdores" type="b2602c69:ProjectViewProjectNode" />
               <item name="Sistema-Trabajdores" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sistema-Trabajdores" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sistema-Trabajdores" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sistema-Trabajdores" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sistema-Trabajdores" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="gestor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sistema-Trabajdores" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sistema-Trabajdores" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -249,12 +417,12 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555290562311" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/reportes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../veronica" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.16251831" />
     <property name="recentsLimit" value="5" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="settings.editor.selected.configurable" value="experimental" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -321,7 +489,8 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application">
-      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH" value="11.0.2" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="home.Main" />
       <module name="RestaurantMgt" />
       <option name="VM_PARAMETERS" value="--module-path &quot;lib/javafx-sdk-11.0.2/lib&quot; --add-modules=javafx.controls,javafx.fxml" />
@@ -463,30 +632,46 @@
       <workItem from="1559401488479" duration="2937000" />
       <workItem from="1559879343616" duration="11000" />
       <workItem from="1560097225935" duration="50000" />
-      <workItem from="1561908864880" duration="5305000" />
+      <workItem from="1561908864880" duration="5599000" />
+      <workItem from="1562011764905" duration="847000" />
+      <workItem from="1562515148629" duration="2237000" />
+      <workItem from="1562519032138" duration="673000" />
+      <workItem from="1563492209805" duration="14000" />
+      <workItem from="1566145061337" duration="1521000" />
+      <workItem from="1566310789133" duration="82000" />
+      <workItem from="1568065206981" duration="1089000" />
+      <workItem from="1568897723111" duration="337000" />
+      <workItem from="1568916363800" duration="5723000" />
+      <workItem from="1568923499146" duration="5325000" />
+      <workItem from="1569004971187" duration="6568000" />
+      <workItem from="1569021644748" duration="1304000" />
+      <workItem from="1569033010304" duration="303000" />
+      <workItem from="1569170458232" duration="1728000" />
+      <workItem from="1569172223905" duration="3508000" />
+      <workItem from="1569182160615" duration="2944000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144012000" />
+    <option name="totallyTimeSpent" value="178509000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="994" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.53125" visible="true" weight="0.18303095" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.5509259" visible="true" weight="0.2171825" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Structure" order="5" sideWeight="0.46875" side_tool="true" weight="0.16488793" />
-      <window_info id="Favorites" order="6" sideWeight="0.43013102" side_tool="true" weight="0.13820705" />
+      <window_info id="Favorites" order="6" sideWeight="0.44907406" side_tool="true" weight="0.18729989" />
       <window_info id="Learn" order="7" />
-      <window_info id="Persistence" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.3298611" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.4994664" weight="0.35532406" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.39907193" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.4994664" visible="true" weight="0.39699075" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.39814815" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
@@ -500,6 +685,7 @@
       <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="16" />
       <window_info anchor="bottom" id="Java Enterprise" order="17" weight="0.32946634" />
+      <window_info anchor="bottom" id="Persistence" order="18" weight="0.3298611" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Palette&#9;" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
@@ -510,9 +696,9 @@
       <window_info anchor="right" id="Ant Build" order="7" weight="0.2497332" />
       <window_info anchor="right" id="Codota" order="8" weight="0.32977587" />
       <window_info anchor="right" id="Maven" order="9" weight="0.32977587" />
-      <window_info anchor="right" id="Database" order="10" />
-      <window_info anchor="right" id="Palette" order="11" />
-      <window_info anchor="right" id="Coverage" order="12" side_tool="true" />
+      <window_info anchor="right" id="Palette" order="10" />
+      <window_info anchor="right" id="Coverage" order="11" side_tool="true" />
+      <window_info anchor="right" id="Database" order="12" weight="0.32977587" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -532,126 +718,6 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/global/AutocompletionlTextField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-361">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Producto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#486#487#0" expanded="true" />
-            <element signature="e#518#519#0" expanded="true" />
-            <element signature="e#565#566#0" expanded="true" />
-            <element signature="e#607#608#0" expanded="true" />
-            <element signature="e#646#647#0" expanded="true" />
-            <element signature="e#681#682#0" expanded="true" />
-            <element signature="e#737#738#0" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
-            <element signature="e#823#824#0" expanded="true" />
-            <element signature="e#857#858#0" expanded="true" />
-            <element signature="e#911#912#0" expanded="true" />
-            <element signature="e#957#958#0" expanded="true" />
-            <element signature="e#994#995#0" expanded="true" />
-            <element signature="e#1027#1028#0" expanded="true" />
-            <element signature="e#1079#1080#0" expanded="true" />
-            <element signature="e#1123#1124#0" expanded="true" />
-            <element signature="e#1200#1201#0" expanded="true" />
-            <element signature="e#1240#1241#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Trabajador.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#783#784#0" expanded="true" />
-            <element signature="e#822#823#0" expanded="true" />
-            <element signature="e#887#888#0" expanded="true" />
-            <element signature="e#943#944#0" expanded="true" />
-            <element signature="e#1028#1029#0" expanded="true" />
-            <element signature="e#1063#1064#0" expanded="true" />
-            <element signature="e#1130#1131#0" expanded="true" />
-            <element signature="e#1178#1179#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/home/Productos.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/EntityTabalaPago.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/EntityTablaInforme.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="67" column="34" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/home/Reportes.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/jasperreports-4.1.3.jar!/net/sf/jasperreports/engine/JasperFillManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1710">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="79" selection-start-line="10" selection-start-column="68" selection-end-line="10" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/jasperreports-4.1.3.jar!/net/sf/jasperreports/engine/fill/JRVerticalFiller.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.ideaLibSources/jasperreports-4.1.3-sources.jar!/net/sf/jasperreports/engine/fill/JRVerticalFiller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-621">
@@ -659,75 +725,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/InformesProducto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
-            <element signature="e#683#684#0" expanded="true" />
-            <element signature="e#732#733#0" expanded="true" />
-            <element signature="e#776#777#0" expanded="true" />
-            <element signature="e#815#816#0" expanded="true" />
-            <element signature="e#850#851#0" expanded="true" />
-            <element signature="e#906#907#0" expanded="true" />
-            <element signature="e#954#955#0" expanded="true" />
-            <element signature="e#989#990#0" expanded="true" />
-            <element signature="e#1023#1024#0" expanded="true" />
-            <element signature="e#1074#1075#0" expanded="true" />
-            <element signature="e#1120#1121#0" expanded="true" />
-            <element signature="e#1158#1159#0" expanded="true" />
-            <element signature="e#1192#1193#0" expanded="true" />
-            <element signature="e#1246#1247#0" expanded="true" />
-            <element signature="e#1292#1293#0" expanded="true" />
-            <element signature="e#1324#1325#0" expanded="true" />
-            <element signature="e#1352#1353#0" expanded="true" />
-            <element signature="e#1394#1395#0" expanded="true" />
-            <element signature="e#1428#1429#0" expanded="true" />
-            <element signature="e#1462#1463#0" expanded="true" />
-            <element signature="e#1494#1495#0" expanded="true" />
-            <element signature="e#1542#1543#0" expanded="true" />
-            <element signature="e#1584#1585#0" expanded="true" />
-            <element signature="e#1621#1622#0" expanded="true" />
-            <element signature="e#1652#1653#0" expanded="true" />
-            <element signature="e#1702#1703#0" expanded="true" />
-            <element signature="e#1742#1743#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/ControllerRegistro.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/conection/Conexion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="86" selection-start-line="18" selection-start-column="86" selection-end-line="18" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/global/Styles.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gestor/GestorTransaccion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -765,24 +766,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/home/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/artifacts/RestaurantMgt.xml" />
-    <entry file="file://$PROJECT_DIR$/src/conection/Conection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -802,18 +786,6 @@
     <entry file="file://$PROJECT_DIR$/RestaurantMgt.eml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gestor/GestorTrabajador.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1#22#0" expanded="true" />
-            <element signature="e#1#74#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -824,40 +796,89 @@
     <entry file="file://$PROJECT_DIR$/.project">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/home/Item.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reportes/Cherry.jrxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="50" column="19" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Transaccion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1149#1150#0" expanded="true" />
+            <element signature="e#1195#1196#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/conection/Conection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="55" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/conection/Conexion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="86" selection-start-line="18" selection-start-column="86" selection-end-line="18" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Producto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/global/Global.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="34" />
+        <state relative-caret-position="208">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gestor/GestorProducto.java">
+    <entry file="file://$PROJECT_DIR$/sql/base.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-1109" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="76" selection-start-line="22" selection-start-column="76" selection-end-line="22" selection-end-column="76" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/ControllerProducto.java">
+    <entry file="file://$PROJECT_DIR$/src/reportes/totalHorasjrxml.jrxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="67" column="57" selection-start-line="67" selection-start-column="57" selection-end-line="67" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="300">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gestor/GestorGlobal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        <state relative-caret-position="315">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -871,72 +892,188 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/reportes/totalHorasjrxml.jrxml">
+    <entry file="file://$PROJECT_DIR$/src/controller/ControllerProducto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="51" column="34" lean-forward="true" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/ControllerRegistro.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/EntityTabalaPago.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="692">
+          <caret line="92" column="4" selection-start-line="92" selection-start-column="4" selection-end-line="92" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2500#2501#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/EntityTablaInforme.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#908#909#0" expanded="true" />
+            <element signature="e#951#952#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/global/AutocompletionlTextField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/FacturaDetalle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gestor/GestorTransaccion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/FacturaCabecera.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
+            <element signature="e#496#497#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
+            <element signature="e#570#571#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/home/Item.fxml">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/model/InformesProducto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/home/Home.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/ControllerReportes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="67" column="22" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="6720">
+          <caret line="448" column="155" selection-start-line="448" selection-start-column="132" selection-end-line="448" selection-end-column="155" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/reportes/Cherry.jrxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="50" column="19" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/reportes/factura.jasper">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Transaccion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1066#1067#0" expanded="true" />
-            <element signature="e#1100#1101#0" expanded="true" />
-            <element signature="e#1394#1395#0" expanded="true" />
-            <element signature="e#1427#1428#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/reportes/factura.jrxml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/reportes/Repor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-52">
-          <caret line="72" column="82" selection-start-line="72" selection-start-column="82" selection-end-line="72" selection-end-column="82" />
+        <state relative-caret-position="275">
+          <caret line="106" column="33" selection-start-line="106" selection-start-column="33" selection-end-line="106" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gestor/GestorProducto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-358">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1#54#0" expanded="true" />
+            <element signature="e#1#20#0" expanded="true" />
+            <element signature="e#2#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gestor/GestorTrabajador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="29" column="2" lean-forward="true" selection-start-line="29" selection-start-column="2" selection-end-line="44" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1#22#0" expanded="true" />
+            <element signature="e#1#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gestor/GestorFactura.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1#27#0" expanded="true" />
+            <element signature="e#1#57#0" expanded="true" />
+            <element signature="e#1#58#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/home/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="353" column="32" selection-start-line="353" selection-start-column="32" selection-end-line="353" selection-end-column="32" />
+        <state relative-caret-position="299">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/home/Home.fxml">
+    <entry file="file://$PROJECT_DIR$/src/home/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="498" column="18" lean-forward="true" selection-start-line="498" selection-start-column="18" selection-end-line="498" selection-end-column="18" />
+        <state relative-caret-position="-28">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/ControllerReportes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="94" column="13" selection-start-line="94" selection-start-column="13" selection-end-line="94" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
@@ -945,10 +1082,10 @@
         <settings>
           <artifact-editor>
             <show-content>
-              <type id="artifact" />
               <type id="library" />
               <type id="jpa-descriptors" />
               <type id="javaee-facet-resources" />
+              <type id="artifact" />
             </show-content>
           </artifact-editor>
           <last-edited>RestaurantMgt</last-edited>
@@ -1017,6 +1154,17 @@
             <option name="proportions">
               <list>
                 <option value="0.16251831" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>

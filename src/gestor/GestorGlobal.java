@@ -6,7 +6,7 @@ import org.hibernate.Session;
 public class GestorGlobal {
 
 
-    public static void save(Object user){
+    public static void save(Object user) {
         Session session = Global.CONEXION.factory.getCurrentSession();
         session.beginTransaction();
         session.save(user);
@@ -14,10 +14,12 @@ public class GestorGlobal {
         session.close();
 
     }
-    public static void update(Object user){
+
+    public static void update(Object user) {
         Session session = Global.CONEXION.factory.getCurrentSession();
         session.beginTransaction();
         session.update(user);
+        
         session.getTransaction().commit();
         session.close();
     }

@@ -1,9 +1,6 @@
 package conection;
 
-import model.InformesProducto;
-import model.Producto;
-import model.Trabajador;
-import model.Transaccion;
+import model.*;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
@@ -17,10 +14,10 @@ public class Conection {
                 .addAnnotatedClass(Transaccion.class)
                 .addAnnotatedClass(Producto.class)
                 .addAnnotatedClass(InformesProducto.class)
-
+                .addAnnotatedClass(FacturaCabecera.class)
+                .addAnnotatedClass(FacturaDetalle.class)
                 .buildSessionFactory();
     }
-
 
 
 }

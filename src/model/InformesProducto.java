@@ -7,25 +7,25 @@ import java.util.Date;
 @Table
 public class InformesProducto {
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
-    private  int codigoInfo;
+    private int codigoInfo;
     @Column
-    private  String nombreProduc;
+    private String nombreProduc;
     @Column
-    private  int cantidadPro;
+    private int cantidadPro;
 
     @Column
-    private  double precioUnita;
+    private double precioUnita;
     @Column
-    private  double total;
+    private double total;
 
     @Column
     private Date fechaInfo;
 
-    @ManyToOne(cascade= {CascadeType.PERSIST, CascadeType.MERGE,
+    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE,
             CascadeType.DETACH, CascadeType.REFRESH})
-    @JoinColumn(name="codigoTra")
+    @JoinColumn(name = "codigoTra")
     private Producto producto;
 
     public int getCodigoInfo() {

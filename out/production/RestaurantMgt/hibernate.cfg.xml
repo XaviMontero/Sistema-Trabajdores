@@ -20,14 +20,16 @@
         <!-- Echo the SQL to stdout -->
         <property name="show_sql">true</property>
 
-
-        <!-- Set the current session context -->
+        <!--   <property name="hibernate.hbm2ddl.auto">update</property> -->
+         <!-- Set the current session context -->
         <property name="current_session_context_class">thread</property>
         <property name="hibernate.enable_lazy_load_no_trans">true</property>
         <mapping class="model.Trabajador"/>
         <mapping class="model.Transaccion"/>
         <mapping class="model.Producto"/>
         <mapping class="model.InformesProducto"/>
+        <mapping class="model.FacturaDetalle"/>
+        <mapping class="model.FacturaCabecera"/>
 
     </session-factory>
 

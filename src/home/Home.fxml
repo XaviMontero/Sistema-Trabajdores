@@ -20,483 +20,465 @@
 
 <?import global.AutocompletionlTextField?>
 <StackPane fx:id="rootPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.Controller">
-   <children>
-      <AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="762.0" prefWidth="1256.0" style="-fx-background-color: #02030A;">
-         <children>
-            <VBox alignment="TOP_CENTER" prefHeight="576.0" prefWidth="256.0" style="-fx-background-color: #05071F;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
-               <children>
-                  <Label />
-                  <ImageView fitHeight="135.0" fitWidth="215.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../images/logo.png" />
-                     </image>
-                  </ImageView>
-                  <Label />
-                  <Button fx:id="btnOverview" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" stylesheets="@../css/style.css" text="Inicio" textFill="#e7e5e5">
-                     <graphic>
-                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/icons8_Home_32px.png" />
-                           </image>
+    <children>
+        <AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="762.0" prefWidth="1256.0" style="-fx-background-color: #02030A;">
+            <children>
+                <VBox alignment="TOP_CENTER" prefHeight="576.0" prefWidth="256.0" style="-fx-background-color: #05071F;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <Label />
+                        <ImageView fitHeight="135.0" fitWidth="215.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/logo.png" />
+                            </image>
                         </ImageView>
-                     </graphic>
-                     <opaqueInsets>
-                        <Insets />
-                     </opaqueInsets>
-                     <VBox.margin>
-                        <Insets />
-                     </VBox.margin>
-                     <padding>
-                        <Insets left="50.0" />
-                     </padding>
-                  </Button>
-                  <Button fx:id="btnOrders" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" stylesheets="@../css/style.css" text="Registros">
-                     <graphic>
-                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/icons8_Open_Envelope_32px.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <padding>
-                        <Insets left="50.0" />
-                     </padding>
-                  </Button>
-                  <Button fx:id="btnCustomers" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" stylesheets="@../css/style.css" text="Pro Formas">
-                     <graphic>
-                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/icons8_Person_32px.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <padding>
-                        <Insets left="50.0" />
-                     </padding>
-                  </Button>
-                  <Button fx:id="btnMenus" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" stylesheets="@../css/style.css" text="Ingreso Personal">
-                     <graphic>
-                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/icons8_Xbox_Menu_32px.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <padding>
-                        <Insets left="50.0" />
-                     </padding>
-                  </Button>
-                  <Button fx:id="btnPackages" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" stylesheets="@../css/style.css" text="Impreciones">
-                     <graphic>
-                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/icons8_Box_32px.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <padding>
-                        <Insets left="50.0" />
-                     </padding>
-                  </Button>
-                  <Button fx:id="btnSettings" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" stylesheets="@../css/style.css" text="Facturas">
-                     <graphic>
-                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/icons8_Slider__32px.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <padding>
-                        <Insets left="50.0" />
-                     </padding>
-                  </Button>
-                  <Button fx:id="btnSignout" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" stylesheets="@../css/style.css" text="Sign Out">
-                     <graphic>
-                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/icons8_Sign_Out_32px.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <padding>
-                        <Insets left="50.0" />
-                     </padding>
-                  </Button>
-               </children>
-            </VBox>
-            <StackPane fx:id="deskotpPane" layoutX="258.0" prefHeight="762.0" prefWidth="1000.0" style="-fx-background-color: #02030A;">
-               <children>
-                  <Pane fx:id="pnlOverview" prefHeight="309.0" prefWidth="450.0" style="-fx-background-color: #02030A;">
-                     <children>
-                        <Label layoutX="57.0" layoutY="25.0" text="Dia de paga" textFill="#e7e5e5">
-                           <font>
-                              <Font size="24.0" />
-                           </font>
-                        </Label>
-                        <HBox alignment="CENTER_LEFT" layoutX="45.0" layoutY="72.0" prefHeight="92.0" prefWidth="661.0" spacing="50.0">
-                           <children>
-                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
-                                 <children>
-                                    <Label text="22000" textFill="#2a73ff">
-                                       <font>
-                                          <Font name="System Bold" size="26.0" />
-                                       </font>
-                                    </Label>
-                                    <Label text="Total de horas " textFill="#e7e5e5" />
-                                 </children>
-                              </VBox>
-                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
-                                 <children>
-                                    <Label text="1500" textFill="#26bfbc">
-                                       <font>
-                                          <Font name="System Bold" size="26.0" />
-                                       </font>
-                                    </Label>
-                                    <Label prefHeight="21.0" prefWidth="111.0" text="HorasPagadas" textAlignment="CENTER" textFill="#e7e5e5" />
-                                 </children>
-                              </VBox>
-                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
-                                 <children>
-                                    <Label text="1000" textFill="#fa5f7e">
-                                       <font>
-                                          <Font name="System Bold" size="26.0" />
-                                       </font>
-                                    </Label>
-                                    <Label text="H. Pendientes" textAlignment="CENTER" textFill="#e7e5e5" />
-                                 </children>
-                              </VBox>
-                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
-                                 <children>
-                                    <Label text="780" textFill="#de0000">
-                                       <font>
-                                          <Font name="System Bold" size="26.0" />
-                                       </font>
-                                    </Label>
-                                    <Label text="H. Pasadas" textFill="#e7e5e5" />
-                                 </children>
-                              </VBox>
-                           </children>
-                        </HBox>
-                        <TableView fx:id="tablaPago" layoutX="121.0" layoutY="202.0" prefHeight="383.0" prefWidth="770.0" stylesheets="@../css/style.css">
-                          <columns>
-                            <TableColumn fx:id="codigo" prefWidth="72.0" text="Codigo" />
-                            <TableColumn fx:id="fecha" minWidth="0.0" prefWidth="112.0" text="Fecha" />
-                              <TableColumn fx:id="horaEntrada" prefWidth="154.0" text="Hora Entrada" />
-                              <TableColumn fx:id="horaSalida" prefWidth="157.0" text="Hora Salida" />
-                              <TableColumn fx:id="totalHoras" prefWidth="55.0" text="Horas" />
-                              <TableColumn fx:id="totalMinutos" prefWidth="74.0" text="MInutos" />
-                              <TableColumn fx:id="totalPago" prefWidth="145.0" text="Total Pago" />
-                          </columns>
-                        </TableView>
-                        <TextField fx:id="totalApagar" layoutX="412.0" layoutY="598.0" prefHeight="53.0" prefWidth="189.0" promptText="Total" style="-fx-prompt-text-fill: WHITE; -fx-text-fill: WHITE; -fx-font-size: 3em;" stylesheets="@../css/style.css" />
-                        <Button fx:id="btnOverview1" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="407.0" layoutY="678.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="59.0" prefWidth="198.0" style="-fx-font-size: 1.3em;" stylesheets="@../css/style.css" text="Cancelar" textAlignment="CENTER" textFill="#e7e5e5">
-                           <opaqueInsets>
-                              <Insets />
-                           </opaqueInsets>
-                           <padding>
-                              <Insets left="50.0" />
-                           </padding>
-                           <graphic>
-                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../images/icons8_Home_32px.png" />
-                                 </image>
-                              </ImageView>
-                           </graphic>
+                        <Label />
+                        <Button fx:id="btnOverview" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" stylesheets="@../css/style.css" text="Inicio" textFill="#e7e5e5">
+                            <graphic>
+                                <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/icons8_Home_32px.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                            <padding>
+                                <Insets left="50.0" />
+                            </padding>
                         </Button>
-                        <AutocompletionlTextField fx:id="horaPagar" layoutX="591.0" layoutY="40.0" prefHeight="32.0" prefWidth="395.0" promptText="Buscar Trabajador" style="-fx-background-color: #02030A; -fx-font-size: 1.2em; -fx-border-color: #B7C3D7; -fx-border-radius: 2em; -fx-text-fill: WHITE;" />
-                        <ImageView fitHeight="35.0" fitWidth="29.0" layoutX="545.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/icons8_Search_52px.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </Pane>
-                  <Pane fx:id="pnIngresoTrabajador" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #02030A;" stylesheets="@../css/style.css">
-                     <children>
-                        <Label layoutX="14.0" layoutY="20.0" text="Ingreso Presonal" textFill="#e7e5e5">
+                        <Button fx:id="btnOrders" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" stylesheets="@../css/style.css" text="Registros">
+                            <graphic>
+                                <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/icons8_Open_Envelope_32px.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="50.0" />
+                            </padding>
+                        </Button>
+                        <Button fx:id="btnCustomers" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" stylesheets="@../css/style.css" text="Pro Formas">
+                            <graphic>
+                                <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/icons8_Person_32px.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="50.0" />
+                            </padding>
+                        </Button>
+                        <Button fx:id="btnMenus" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" stylesheets="@../css/style.css" text="Ingreso Personal">
+                            <graphic>
+                                <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/icons8_Xbox_Menu_32px.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="50.0" />
+                            </padding>
+                        </Button>
+                        <Button fx:id="btnPackages" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" stylesheets="@../css/style.css" text="Impreciones">
+                            <graphic>
+                                <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/icons8_Box_32px.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="50.0" />
+                            </padding>
+                        </Button>
+                        <Button fx:id="btnSettings" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" stylesheets="@../css/style.css" text="Facturas">
+                            <graphic>
+                                <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/icons8_Slider__32px.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="50.0" />
+                            </padding>
+                        </Button>
+                        <Button fx:id="btnSignout" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" stylesheets="@../css/style.css" text="Sign Out">
+                            <graphic>
+                                <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/icons8_Sign_Out_32px.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="50.0" />
+                            </padding>
+                        </Button>
+                    </children>
+                </VBox>
+                <StackPane fx:id="deskotpPane" layoutX="258.0" prefHeight="762.0" prefWidth="1000.0" style="-fx-background-color: #02030A;">
+                    <children>
+                        <Pane fx:id="pnIngresoTrabajador" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #02030A;" stylesheets="@../css/style.css">
+                            <children>
+                                <Label layoutX="14.0" layoutY="20.0" text="Ingreso Presonal" textFill="#e7e5e5">
+                                    <font>
+                                        <Font size="24.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="txtNombre" layoutX="70.0" layoutY="95.0" prefHeight="30.0" prefWidth="256.0" promptText="Nombres Trabajador" style="-fx-prompt-text-fill: WHITE; -fx-font-size: 1.2em; -fx-text-fill: WHITE;" stylesheets="@../css/style.css" />
+                                <Button fx:id="btnGuardarTrabajadores" layoutX="14.0" layoutY="674.0" mnemonicParsing="false" onAction="#cliksTrabajadoresIngreso" prefHeight="53.0" prefWidth="156.0" text="Guardar" />
+                                <Button fx:id="btnDarDeBajaTrabajador" layoutX="203.0" layoutY="674.0" mnemonicParsing="false" onAction="#cliksTrabajadoresIngreso" prefHeight="53.0" prefWidth="156.0" stylesheets="@../css/style.css" text="Dar de baja" />
+                                <Separator layoutX="14.0" layoutY="628.0" prefHeight="0.0" prefWidth="959.0" />
+                                <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="14.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/user.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fitHeight="38.0" fitWidth="36.0" layoutX="354.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/date.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="14.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/lasname.png" />
+                                    </image>
+                                </ImageView>
+                                <TextField fx:id="txtApelldio" layoutX="71.0" layoutY="165.0" prefHeight="30.0" prefWidth="256.0" promptText="Apelldios Trabajador" style="-fx-prompt-text-fill: WHITE; -fx-font-size: 1.2em; -fx-text-fill: WHITE;" stylesheets="@../css/style.css" />
+                                <TextField fx:id="txtDireccion" layoutX="414.0" layoutY="165.0" prefHeight="30.0" prefWidth="189.0" promptText="Direecion Trabajador" style="-fx-prompt-text-fill: WHITE; -fx-font-size: 1.2em; -fx-text-fill: WHITE;" stylesheets="@../css/style.css" />
+                                <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="351.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/diri.png" />
+                                    </image>
+                                </ImageView>
+                                <Separator layoutX="14.0" layoutY="248.0" prefHeight="0.0" prefWidth="959.0" />
+                                <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="14.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/nati.png" />
+                                    </image>
+                                </ImageView>
+                                <TextField fx:id="txtNacionalidad" layoutX="75.0" layoutY="285.0" prefHeight="30.0" prefWidth="256.0" promptText="Nacionalidad" style="-fx-prompt-text-fill: WHITE; -fx-font-size: 1.2em; -fx-text-fill: WHITE;" stylesheets="@../css/style.css" />
+                                <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="359.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/date.png" />
+                                    </image>
+                                </ImageView>
+                                <Label layoutX="627.0" layoutY="291.0" prefHeight="26.0" prefWidth="89.0" style="-fx-prompt-text-fill: white;" text="dd-mm-yyyy" />
+                                <TextField fx:id="txtCodigo" layoutX="75.0" layoutY="410.0" prefHeight="30.0" prefWidth="256.0" promptText="Codigo Trabajador" style="-fx-prompt-text-fill: WHITE; -fx-font-size: 1.2em; -fx-text-fill: WHITE;" stylesheets="@../css/style.css" />
+                                <Separator layoutX="14.0" layoutY="380.0" prefHeight="0.0" prefWidth="959.0" />
+                                <Label layoutX="614.0" layoutY="97.0" prefHeight="26.0" prefWidth="89.0" style="-fx-prompt-text-fill: white;" text="dd-mm-yyyy" />
+                                <TextField fx:id="txtMontoHora" layoutX="338.0" layoutY="490.0" prefHeight="73.0" prefWidth="189.0" promptText="Monto por hora" style="-fx-prompt-text-fill: WHITE; -fx-font-size: 1.2em; -fx-text-fill: WHITE;" stylesheets="@../css/style.css">
+                                    <font>
+                                        <Font size="20.0" />
+                                    </font>
+                                </TextField>
+                                <TextField fx:id="txtCelular" layoutX="422.0" layoutY="416.0" prefHeight="30.0" prefWidth="256.0" promptText="Celular Trabajo" style="-fx-prompt-text-fill: WHITE; -fx-font-size: 1.2em; -fx-text-fill: WHITE;" stylesheets="@../css/style.css" />
+                                <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="12.0" layoutY="396.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/code.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="359.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/cel.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fitHeight="57.0" fitWidth="73.0" layoutX="259.0" layoutY="498.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/money.png" />
+                                    </image>
+                                </ImageView>
+                                <DatePicker fx:id="txtFechaEntrada" layoutX="410.0" layoutY="94.0" promptText="Fecha de Entrada" />
+                                <DatePicker fx:id="txtFechaNacimiento" layoutX="410.0" layoutY="288.0" promptText="Fecha de nacimineto " />
+                                <AutocompletionlTextField fx:id="buscarTrabajador" layoutX="633.0" layoutY="20.0" prefHeight="38.0" prefWidth="353.0" promptText="Buscar Trabajador" style="-fx-background-color: #02030A; -fx-font-size: 1.2em; -fx-border-color: #B7C3D7; -fx-border-radius: 2em;" />
+                                <ImageView fitHeight="35.0" fitWidth="29.0" layoutX="578.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/icons8_Search_52px.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </Pane>
+                        <Pane fx:id="pnlOverview" prefHeight="309.0" prefWidth="450.0" style="-fx-background-color: #02030A;">
+                            <children>
+                                <Label layoutX="57.0" layoutY="25.0" text="Dia de paga" textFill="#e7e5e5">
+                                    <font>
+                                        <Font size="24.0" />
+                                    </font>
+                                </Label>
+                                <HBox alignment="CENTER_LEFT" layoutX="45.0" layoutY="72.0" prefHeight="92.0" prefWidth="661.0" spacing="50.0">
+                                    <children>
+                                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                            <children>
+                                                <Label text="22000" textFill="#2a73ff">
+                                                    <font>
+                                                        <Font name="System Bold" size="26.0" />
+                                                    </font>
+                                                </Label>
+                                                <Label text="Total de horas " textFill="#e7e5e5" />
+                                            </children>
+                                        </VBox>
+                                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                            <children>
+                                                <Label text="1500" textFill="#26bfbc">
+                                                    <font>
+                                                        <Font name="System Bold" size="26.0" />
+                                                    </font>
+                                                </Label>
+                                                <Label prefHeight="21.0" prefWidth="111.0" text="HorasPagadas" textAlignment="CENTER" textFill="#e7e5e5" />
+                                            </children>
+                                        </VBox>
+                                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                            <children>
+                                                <Label text="1000" textFill="#fa5f7e">
+                                                    <font>
+                                                        <Font name="System Bold" size="26.0" />
+                                                    </font>
+                                                </Label>
+                                                <Label text="H. Pendientes" textAlignment="CENTER" textFill="#e7e5e5" />
+                                            </children>
+                                        </VBox>
+                                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                            <children>
+                                                <Label text="780" textFill="#de0000">
+                                                    <font>
+                                                        <Font name="System Bold" size="26.0" />
+                                                    </font>
+                                                </Label>
+                                                <Label text="H. Pasadas" textFill="#e7e5e5" />
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                </HBox>
+                                <TableView fx:id="tablaPago" layoutX="121.0" layoutY="202.0" prefHeight="383.0" prefWidth="770.0" stylesheets="@../css/style.css">
+                                    <columns>
+                                        <TableColumn fx:id="codigo" prefWidth="72.0" text="Codigo" />
+                                        <TableColumn fx:id="fecha" minWidth="0.0" prefWidth="112.0" text="Fecha" />
+                                        <TableColumn fx:id="horaEntrada" prefWidth="154.0" text="Hora Entrada" />
+                                        <TableColumn fx:id="horaSalida" prefWidth="157.0" text="Hora Salida" />
+                                        <TableColumn fx:id="totalHoras" prefWidth="55.0" text="Horas" />
+                                        <TableColumn fx:id="totalMinutos" prefWidth="74.0" text="MInutos" />
+                                        <TableColumn fx:id="totalPago" prefWidth="145.0" text="Total Pago" />
+                                    </columns>
+                                </TableView>
+                                <TextField fx:id="totalApagar" layoutX="412.0" layoutY="598.0" prefHeight="53.0" prefWidth="189.0" promptText="Total" style="-fx-prompt-text-fill: WHITE; -fx-text-fill: WHITE; -fx-font-size: 3em;" stylesheets="@../css/style.css" />
+                                <Button fx:id="btnOverview1" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="407.0" layoutY="678.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="59.0" prefWidth="198.0" style="-fx-font-size: 1.3em;" stylesheets="@../css/style.css" text="Cancelar" textAlignment="CENTER" textFill="#e7e5e5">
+                                    <opaqueInsets>
+                                        <Insets />
+                                    </opaqueInsets>
+                                    <padding>
+                                        <Insets left="50.0" />
+                                    </padding>
+                                    <graphic>
+                                        <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../images/icons8_Home_32px.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <AutocompletionlTextField fx:id="horaPagar" layoutX="591.0" layoutY="40.0" prefHeight="32.0" prefWidth="395.0" promptText="Buscar Trabajador" style="-fx-background-color: #02030A; -fx-font-size: 1.2em; -fx-border-color: #B7C3D7; -fx-border-radius: 2em; -fx-text-fill: WHITE;" />
+                                <ImageView fitHeight="35.0" fitWidth="29.0" layoutX="545.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/icons8_Search_52px.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </Pane>
+                        <Pane fx:id="proFroma" layoutX="10.0" layoutY="10.0" prefHeight="309.0" prefWidth="450.0" style="-fx-background-color: #02030A;">
+                            <children>
+                                <Label layoutX="57.0" layoutY="25.0" text="Pro Froma" textFill="#e7e5e5">
+                                    <font>
+                                        <Font size="24.0" />
+                                    </font>
+                                </Label>
+                                <HBox alignment="CENTER_LEFT" layoutX="46.0" layoutY="102.0" prefHeight="92.0" prefWidth="813.0" spacing="50.0">
+                                    <children>
+                                        <VBox alignment="CENTER" prefHeight="92.0" prefWidth="142.0">
+                                            <children>
+                                                <TextField fx:id="nombreProduCar" prefHeight="26.0" prefWidth="128.0" promptText="Carga.." stylesheets="@../css/style.css">
+                                                    <font>
+                                                        <Font size="15.0" />
+                                                    </font>
+                                                </TextField>
+                                                <Label prefHeight="18.0" prefWidth="112.0" text="Nombre Producto" textFill="#e7e5e5" />
+                                            </children>
+                                        </VBox>
+                                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                            <children>
+                                                <TextField fx:id="costoUnitarioCar" promptText="Carga.." stylesheets="@../css/style.css">
+                                                    <font>
+                                                        <Font size="15.0" />
+                                                    </font>
+                                                </TextField>
+                                                <Label prefHeight="21.0" prefWidth="111.0" text="Costo Unitario" textAlignment="CENTER" textFill="#e7e5e5" />
+                                            </children>
+                                        </VBox>
+                                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                            <children>
+                                                <TextField fx:id="fechaIngresoCar" prefHeight="29.0" prefWidth="141.0" promptText="Carga.." stylesheets="@../css/style.css">
+                                                    <font>
+                                                        <Font size="15.0" />
+                                                    </font>
+                                                </TextField>
+                                                <Label text="Fecha Ingreso" textAlignment="CENTER" textFill="#e7e5e5" />
+                                            </children>
+                                        </VBox>
+                                        <VBox alignment="CENTER" prefHeight="92.0" prefWidth="151.0">
+                                            <children>
+                                                <TextField fx:id="cantidadCar" prefHeight="29.0" prefWidth="96.0" promptText="Carga.." stylesheets="@../css/style.css">
+                                                    <font>
+                                                        <Font size="15.0" />
+                                                    </font>
+                                                </TextField>
+                                                <Label text="Cantidad" textFill="#e7e5e5" />
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                </HBox>
+                                <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="908.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/icons8_Search_52px.png" />
+                                    </image>
+                                </ImageView>
+                                <Button fx:id="almacenarVIstaProducto" layoutX="739.0" layoutY="132.0" mnemonicParsing="false" onAction="#cliksIngresoProducCarga" prefHeight="33.0" prefWidth="123.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20; -fx-background-color: transparent;" stylesheets="@../css/style.css" text="Almacenar" textAlignment="RIGHT" />
+                                <AutocompletionlTextField fx:id="buscarProducto" layoutX="608.0" layoutY="29.0" prefHeight="42.0" prefWidth="336.0" promptText="Buscar Producto" style="-fx-background-color: #02030A; -fx-border-color: #B7C3D7; -fx-border-radius: 2em; -fx-text-fill: WHITE;">
+                                    <font>
+                                        <Font size="20.0" />
+                                    </font>
+                                </AutocompletionlTextField>
+                                <TableView fx:id="tablaInfo" layoutX="57.0" layoutY="217.0" prefHeight="392.0" prefWidth="777.0" stylesheets="@../css/style.css">
+                                    <columns>
+                                        <TableColumn fx:id="codigoPorducto" prefWidth="135.0" text="Codigo Producto" />
+                                        <TableColumn fx:id="NombreProducto" minWidth="0.0" prefWidth="242.0" text="Nombre Producto" />
+                                        <TableColumn fx:id="precioUnitario" prefWidth="128.0" text="Precio Unitario" />
+                                        <TableColumn fx:id="cantidad" prefWidth="135.0" text="cantidad" />
+                                        <TableColumn fx:id="total" prefWidth="135.0" text="Total" />
+                                    </columns>
+                                </TableView>
+                                <Button fx:id="btnEliminarProducto" layoutX="222.0" layoutY="654.0" mnemonicParsing="false" onAction="#cliksIngresoProducCarga" prefHeight="53.0" prefWidth="156.0" stylesheets="@../css/style.css" text="Eliminar" />
+                                <Button fx:id="btnGuardarProductoInfo" layoutX="53.0" layoutY="654.0" mnemonicParsing="false" onAction="#cliksIngresoProducCarga" prefHeight="53.0" prefWidth="156.0" stylesheets="@../css/style.css" text="Guardar" />
+                                <Separator layoutX="19.0" layoutY="624.0" prefHeight="9.0" prefWidth="976.0" />
+                                <TextField fx:id="subTotalProductos" layoutX="446.0" layoutY="650.0" prefHeight="62.0" prefWidth="279.0" promptText="Hora" style="-fx-prompt-text-fill: WHITE; -fx-text-fill: WHITE; -fx-font-size: 3em;" stylesheets="@../css/style.css" text="Sub Total" />
+                            </children>
+                        </Pane>
+                        <Pane fx:id="pnRegistro" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #02030A;" stylesheets="@../css/style.css">
+                            <children>
+                                <Label layoutX="14.0" layoutY="20.0" text="Registro de Horas" textFill="#e7e5e5">
+                                    <font>
+                                        <Font size="24.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="nombreIngreso" layoutX="68.0" layoutY="222.0" prefHeight="30.0" prefWidth="256.0" promptText="Nombres Trabajador" style="-fx-prompt-text-fill: WHITE; -fx-font-size: 1.2em; -fx-text-fill: WHITE;" stylesheets="@../css/style.css" />
+                                <ImageView fitHeight="35.0" fitWidth="29.0" layoutX="14.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/icons8_Search_52px.png" />
+                                    </image>
+                                </ImageView>
+                                <AutocompletionlTextField fx:id="ingresoHoras" layoutX="55.0" layoutY="96.0" prefHeight="38.0" prefWidth="353.0" promptText="Buscar Trabajador" style="-fx-background-color: #02030A; -fx-font-size: 1.2em; -fx-border-color: #B7C3D7; -fx-border-radius: 2em;" />
+                                <TextField fx:id="fechaIngreso" layoutX="412.0" layoutY="219.0" prefHeight="30.0" prefWidth="189.0" promptText="Fecha Entrada" style="-fx-prompt-text-fill: WHITE; -fx-font-size: 1.2em; -fx-text-fill: WHITE;" stylesheets="@../css/style.css" />
+                                <TextField fx:id="horaIngresoActual" layoutX="242.0" layoutY="370.0" prefHeight="92.0" prefWidth="189.0" promptText="Hora" style="-fx-prompt-text-fill: WHITE; -fx-text-fill: WHITE; -fx-font-size: 3em;" stylesheets="@../css/style.css" />
+                                <TextField fx:id="minutosIngresoActual" layoutX="486.0" layoutY="370.0" prefHeight="92.0" prefWidth="336.0" promptText="Hora" style="-fx-prompt-text-fill: WHITE; -fx-text-fill: WHITE; -fx-font-size: 3em;" stylesheets="@../css/style.css" text="Minutos" />
+                                <Button fx:id="btnEntradaTrabajador" layoutX="14.0" layoutY="674.0" mnemonicParsing="false" onAction="#cliksTrabajadoresHoras" prefHeight="53.0" prefWidth="156.0" text="Entrada" />
+                                <Button fx:id="btnSalidaTrabajador" layoutX="203.0" layoutY="674.0" mnemonicParsing="false" onAction="#cliksTrabajadoresHoras" prefHeight="53.0" prefWidth="156.0" text="Salida" />
+                                <Label layoutX="444.0" layoutY="387.0" prefHeight="73.0" prefWidth="32.0" style="-fx-prompt-text-fill: WHITE; -fx-font-size: 2em;" text=":" />
+                                <Separator layoutX="14.0" layoutY="628.0" prefHeight="0.0" prefWidth="959.0" />
+                                <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="12.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/user.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fitHeight="38.0" fitWidth="36.0" layoutX="352.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/date.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fitHeight="42.0" fitWidth="60.0" layoutX="166.0" layoutY="403.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/time.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="12.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/user.png" />
+                                    </image>
+                                </ImageView>
+                                <TextField fx:id="apellidosIngreso" layoutX="69.0" layoutY="292.0" prefHeight="30.0" prefWidth="256.0" promptText="Apelldios Trabajador" style="-fx-prompt-text-fill: WHITE; -fx-font-size: 1.2em; -fx-text-fill: WHITE;" stylesheets="@../css/style.css" />
+                                <TextField fx:id="direccionIngreso" layoutX="412.0" layoutY="298.0" prefHeight="30.0" prefWidth="189.0" promptText="Direecion Trabajador" style="-fx-prompt-text-fill: WHITE; -fx-font-size: 1.2em; -fx-text-fill: WHITE;" stylesheets="@../css/style.css" />
+                                <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="349.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/diri.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </Pane>
+                        <Pane fx:id="pnFactura" prefHeight="309.0" prefWidth="450.0" style="-fx-background-color: #02030A;">
+                            <children>
+                                <Label layoutX="9.0" layoutY="14.0" text="Facturas" textFill="#e7e5e5">
+                                    <font>
+                                        <Font size="24.0" />
+                                    </font>
+                                </Label>
+                                <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="620.0" layoutY="567.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/icons8_Search_52px.png" />
+                                    </image>
+                                </ImageView>
+                                <AutocompletionlTextField fx:id="buscarProducto1" layoutX="324.0" layoutY="556.0" prefHeight="42.0" prefWidth="336.0" promptText="Buscar Producto" style="-fx-background-color: #02030A; -fx-border-color: #B7C3D7; -fx-border-radius: 2em; -fx-text-fill: WHITE;">
+                                    <font>
+                                        <Font size="20.0" />
+                                    </font>
+                                </AutocompletionlTextField>
+                                <TableView fx:id="tablaInfo1" layoutX="57.0" layoutY="217.0" prefHeight="316.0" prefWidth="777.0" stylesheets="@../css/style.css">
+                                    <columns>
+                                        <TableColumn fx:id="codigoPorducto1" prefWidth="135.0" text="Codigo Producto" />
+                                        <TableColumn fx:id="NombreProducto1" minWidth="0.0" prefWidth="242.0" text="Nombre Producto" />
+                                        <TableColumn fx:id="precioUnitario1" prefWidth="128.0" text="Precio Unitario" />
+                                        <TableColumn fx:id="cantidad1" prefWidth="135.0" text="cantidad" />
+                                        <TableColumn fx:id="total1" prefWidth="135.0" text="Total" />
+                                    </columns>
+                                </TableView>
+                                <Button fx:id="btnEliminarFactura" layoutX="222.0" layoutY="654.0" mnemonicParsing="false" onAction="#cliksIngresoProducCarga" prefHeight="53.0" prefWidth="156.0" stylesheets="@../css/style.css" text="Eliminar" />
+                                <Button fx:id="btnGuardarFactura" layoutX="53.0" layoutY="654.0" mnemonicParsing="false" onAction="#cliksIngresoProducCarga" prefHeight="53.0" prefWidth="156.0" stylesheets="@../css/style.css" text="Guardar" />
+                                <Separator layoutX="19.0" layoutY="624.0" prefHeight="9.0" prefWidth="976.0" />
+                                <TextField fx:id="subTotalProductos1" layoutX="446.0" layoutY="650.0" prefHeight="62.0" prefWidth="279.0" promptText="Hora" style="-fx-prompt-text-fill: WHITE; -fx-text-fill: WHITE; -fx-font-size: 3em;" stylesheets="@../css/style.css" text="Sub Total" />
+                        <TextField fx:id="nombreCliente" layoutX="53.0" layoutY="55.0" prefHeight="29.0" prefWidth="297.0" promptText="Carga de datos..." stylesheets="@../css/style.css">
                            <font>
-                              <Font size="24.0" />
-                           </font>
-                        </Label>
-                        <TextField fx:id="txtNombre" layoutX="70.0" layoutY="95.0" prefHeight="30.0" prefWidth="256.0" promptText="Nombres Trabajador" style="-fx-prompt-text-fill: WHITE; -fx-font-size: 1.2em; -fx-text-fill: WHITE;" stylesheets="@../css/style.css" />
-                        <Button fx:id="btnGuardarTrabajadores" layoutX="14.0" layoutY="674.0" mnemonicParsing="false" onAction="#cliksTrabajadoresIngreso" prefHeight="53.0" prefWidth="156.0" text="Guardar" />
-                        <Button fx:id="btnDarDeBajaTrabajador" layoutX="203.0" layoutY="674.0" mnemonicParsing="false" onAction="#cliksTrabajadoresIngreso" prefHeight="53.0" prefWidth="156.0" stylesheets="@../css/style.css" text="Dar de baja" />
-                        <Separator layoutX="14.0" layoutY="628.0" prefHeight="0.0" prefWidth="959.0" />
-                        <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="14.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/user.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fitHeight="38.0" fitWidth="36.0" layoutX="354.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/date.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="14.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/lasname.png" />
-                           </image>
-                        </ImageView>
-                        <TextField fx:id="txtApelldio" layoutX="71.0" layoutY="165.0" prefHeight="30.0" prefWidth="256.0" promptText="Apelldios Trabajador" style="-fx-prompt-text-fill: WHITE; -fx-font-size: 1.2em; -fx-text-fill: WHITE;" stylesheets="@../css/style.css" />
-                        <TextField fx:id="txtDireccion" layoutX="414.0" layoutY="165.0" prefHeight="30.0" prefWidth="189.0" promptText="Direecion Trabajador" style="-fx-prompt-text-fill: WHITE; -fx-font-size: 1.2em; -fx-text-fill: WHITE;" stylesheets="@../css/style.css" />
-                        <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="351.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/diri.png" />
-                           </image>
-                        </ImageView>
-                        <Separator layoutX="14.0" layoutY="248.0" prefHeight="0.0" prefWidth="959.0" />
-                        <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="14.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/nati.png" />
-                           </image>
-                        </ImageView>
-                        <TextField fx:id="txtNacionalidad" layoutX="75.0" layoutY="285.0" prefHeight="30.0" prefWidth="256.0" promptText="Nacionalidad" style="-fx-prompt-text-fill: WHITE; -fx-font-size: 1.2em; -fx-text-fill: WHITE;" stylesheets="@../css/style.css" />
-                        <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="359.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/date.png" />
-                           </image>
-                        </ImageView>
-                        <Label layoutX="627.0" layoutY="291.0" prefHeight="26.0" prefWidth="89.0" style="-fx-prompt-text-fill: white;" text="dd-mm-yyyy" />
-                        <TextField fx:id="txtCodigo" layoutX="75.0" layoutY="410.0" prefHeight="30.0" prefWidth="256.0" promptText="Codigo Trabajador" style="-fx-prompt-text-fill: WHITE; -fx-font-size: 1.2em; -fx-text-fill: WHITE;" stylesheets="@../css/style.css" />
-                        <Separator layoutX="14.0" layoutY="380.0" prefHeight="0.0" prefWidth="959.0" />
-                        <Label layoutX="614.0" layoutY="97.0" prefHeight="26.0" prefWidth="89.0" style="-fx-prompt-text-fill: white;" text="dd-mm-yyyy" />
-                        <TextField fx:id="txtMontoHora" layoutX="338.0" layoutY="490.0" prefHeight="73.0" prefWidth="189.0" promptText="Monto por hora" style="-fx-prompt-text-fill: WHITE; -fx-font-size: 1.2em; -fx-text-fill: WHITE;" stylesheets="@../css/style.css">
-                           <font>
-                              <Font size="20.0" />
+                              <Font size="15.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="txtCelular" layoutX="422.0" layoutY="416.0" prefHeight="30.0" prefWidth="256.0" promptText="Celular Trabajo" style="-fx-prompt-text-fill: WHITE; -fx-font-size: 1.2em; -fx-text-fill: WHITE;" stylesheets="@../css/style.css" />
-                        <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="12.0" layoutY="396.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/code.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="359.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/cel.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fitHeight="57.0" fitWidth="73.0" layoutX="259.0" layoutY="498.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/money.png" />
-                           </image>
-                        </ImageView>
-                        <DatePicker fx:id="txtFechaEntrada" layoutX="410.0" layoutY="94.0" promptText="Fecha de Entrada" />
-                        <DatePicker fx:id="txtFechaNacimiento" layoutX="410.0" layoutY="288.0" promptText="Fecha de nacimineto " />
-                        <AutocompletionlTextField fx:id="buscarTrabajador" layoutX="633.0" layoutY="20.0" prefHeight="38.0" prefWidth="353.0" promptText="Buscar Trabajador" style="-fx-background-color: #02030A; -fx-font-size: 1.2em; -fx-border-color: #B7C3D7; -fx-border-radius: 2em;" />
-                        <ImageView fitHeight="35.0" fitWidth="29.0" layoutX="578.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/icons8_Search_52px.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </Pane>
-                  <Pane fx:id="pnRegistro" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #02030A;" stylesheets="@../css/style.css">
-                     <children>
-                        <Label layoutX="14.0" layoutY="20.0" text="Registro de Horas" textFill="#e7e5e5">
+                        <Label layoutX="53.0" layoutY="93.0" prefHeight="18.0" prefWidth="297.0" text="Nombre de Clientes" textFill="#e7e5e5" />
+                        <TextField fx:id="direccionCliente" layoutX="393.0" layoutY="55.0" prefHeight="29.0" prefWidth="297.0" promptText="Carga de datos..." stylesheets="@../css/style.css">
                            <font>
-                              <Font size="24.0" />
-                           </font>
-                        </Label>
-                        <TextField fx:id="nombreIngreso" layoutX="68.0" layoutY="222.0" prefHeight="30.0" prefWidth="256.0" promptText="Nombres Trabajador" style="-fx-prompt-text-fill: WHITE; -fx-font-size: 1.2em; -fx-text-fill: WHITE;" stylesheets="@../css/style.css" />
-                        <ImageView fitHeight="35.0" fitWidth="29.0" layoutX="14.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/icons8_Search_52px.png" />
-                           </image>
-                        </ImageView>
-                        <AutocompletionlTextField fx:id="ingresoHoras" layoutX="55.0" layoutY="96.0" prefHeight="38.0" prefWidth="353.0" promptText="Buscar Trabajador" style="-fx-background-color: #02030A; -fx-font-size: 1.2em; -fx-border-color: #B7C3D7; -fx-border-radius: 2em;" />
-                        <TextField fx:id="fechaIngreso" layoutX="412.0" layoutY="219.0" prefHeight="30.0" prefWidth="189.0" promptText="Fecha Entrada" style="-fx-prompt-text-fill: WHITE; -fx-font-size: 1.2em; -fx-text-fill: WHITE;" stylesheets="@../css/style.css" />
-                        <TextField fx:id="horaIngresoActual" layoutX="242.0" layoutY="370.0" prefHeight="92.0" prefWidth="189.0" promptText="Hora" style="-fx-prompt-text-fill: WHITE; -fx-text-fill: WHITE; -fx-font-size: 3em;" stylesheets="@../css/style.css" />
-                        <TextField fx:id="minutosIngresoActual" layoutX="486.0" layoutY="370.0" prefHeight="92.0" prefWidth="336.0" promptText="Hora" style="-fx-prompt-text-fill: WHITE; -fx-text-fill: WHITE; -fx-font-size: 3em;" stylesheets="@../css/style.css" text="Minutos" />
-                        <Button fx:id="btnEntradaTrabajador" layoutX="14.0" layoutY="674.0" mnemonicParsing="false" onAction="#cliksTrabajadoresHoras" prefHeight="53.0" prefWidth="156.0" text="Entrada" />
-                        <Button fx:id="btnSalidaTrabajador" layoutX="203.0" layoutY="674.0" mnemonicParsing="false" onAction="#cliksTrabajadoresHoras" prefHeight="53.0" prefWidth="156.0" text="Salida" />
-                        <Label layoutX="444.0" layoutY="387.0" prefHeight="73.0" prefWidth="32.0" style="-fx-prompt-text-fill: WHITE; -fx-font-size: 2em;" text=":" />
-                        <Separator layoutX="14.0" layoutY="628.0" prefHeight="0.0" prefWidth="959.0" />
-                        <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="12.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/user.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fitHeight="38.0" fitWidth="36.0" layoutX="352.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/date.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fitHeight="42.0" fitWidth="60.0" layoutX="166.0" layoutY="403.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/time.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="12.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/user.png" />
-                           </image>
-                        </ImageView>
-                        <TextField fx:id="apellidosIngreso" layoutX="69.0" layoutY="292.0" prefHeight="30.0" prefWidth="256.0" promptText="Apelldios Trabajador" style="-fx-prompt-text-fill: WHITE; -fx-font-size: 1.2em; -fx-text-fill: WHITE;" stylesheets="@../css/style.css" />
-                        <TextField fx:id="direccionIngreso" layoutX="412.0" layoutY="298.0" prefHeight="30.0" prefWidth="189.0" promptText="Direecion Trabajador" style="-fx-prompt-text-fill: WHITE; -fx-font-size: 1.2em; -fx-text-fill: WHITE;" stylesheets="@../css/style.css" />
-                        <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="349.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/diri.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </Pane>
-                  <Pane fx:id="proFroma" layoutX="10.0" layoutY="10.0" prefHeight="309.0" prefWidth="450.0" style="-fx-background-color: #02030A;">
-                     <children>
-                        <Label layoutX="57.0" layoutY="25.0" text="Pro Froma" textFill="#e7e5e5">
-                           <font>
-                              <Font size="24.0" />
-                           </font>
-                        </Label>
-                        <HBox alignment="CENTER_LEFT" layoutX="46.0" layoutY="102.0" prefHeight="92.0" prefWidth="813.0" spacing="50.0">
-                           <children>
-                              <VBox alignment="CENTER" prefHeight="92.0" prefWidth="142.0">
-                                 <children>
-                                    <TextField fx:id="nombreProduCar" prefHeight="26.0" prefWidth="128.0" promptText="Carga.." stylesheets="@../css/style.css">
-                                       <font>
-                                          <Font size="15.0" />
-                                       </font></TextField>
-                                    <Label prefHeight="18.0" prefWidth="112.0" text="Nombre Producto" textFill="#e7e5e5" />
-                                 </children>
-                              </VBox>
-                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
-                                 <children>
-                                    <TextField fx:id="costoUnitarioCar" promptText="Carga.." stylesheets="@../css/style.css">
-                                       <font>
-                                          <Font size="15.0" />
-                                       </font></TextField>
-                                    <Label prefHeight="21.0" prefWidth="111.0" text="Costo Unitario" textAlignment="CENTER" textFill="#e7e5e5" />
-                                 </children>
-                              </VBox>
-                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
-                                 <children>
-                                    <TextField fx:id="fechaIngresoCar" prefHeight="29.0" prefWidth="141.0" promptText="Carga.." stylesheets="@../css/style.css">
-                                       <font>
-                                          <Font size="15.0" />
-                                       </font></TextField>
-                                    <Label text="Fecha Ingreso" textAlignment="CENTER" textFill="#e7e5e5" />
-                                 </children>
-                              </VBox>
-                              <VBox alignment="CENTER" prefHeight="92.0" prefWidth="151.0">
-                                 <children>
-                                    <TextField fx:id="cantidadCar" prefHeight="29.0" prefWidth="96.0" promptText="Carga.." stylesheets="@../css/style.css">
-                                       <font>
-                                          <Font size="15.0" />
-                                       </font></TextField>
-                                    <Label text="Cantidad" textFill="#e7e5e5" />
-                                 </children>
-                              </VBox>
-                           </children>
-                        </HBox>
-                        <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="908.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/icons8_Search_52px.png" />
-                           </image>
-                        </ImageView>
-                        <Button fx:id="almacenarVIstaProducto" layoutX="739.0" layoutY="132.0" mnemonicParsing="false" onAction="#cliksIngresoProducCarga" prefHeight="33.0" prefWidth="123.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20; -fx-background-color: transparent;" stylesheets="@../css/style.css" text="Almacenar" textAlignment="RIGHT" />
-                        <AutocompletionlTextField fx:id="buscarProducto" layoutX="608.0" layoutY="29.0" prefHeight="42.0" prefWidth="336.0" promptText="Buscar Producto" style="-fx-background-color: #02030A; -fx-border-color: #B7C3D7; -fx-border-radius: 2em; -fx-text-fill: WHITE;">
-                           <font>
-                              <Font size="20.0" />
-                           </font></AutocompletionlTextField>
-                        <TableView fx:id="tablaInfo" layoutX="57.0" layoutY="217.0" prefHeight="392.0" prefWidth="777.0" stylesheets="@../css/style.css">
-                          <columns>
-                            <TableColumn fx:id="codigoPorducto" prefWidth="135.0" text="Codigo Producto" />
-                            <TableColumn fx:id="NombreProducto" minWidth="0.0" prefWidth="242.0" text="Nombre Producto" />
-                              <TableColumn fx:id="precioUnitario" prefWidth="128.0" text="Precio Unitario" />
-                              <TableColumn fx:id="cantidad" prefWidth="135.0" text="cantidad" />
-                              <TableColumn fx:id="total" prefWidth="135.0" text="Total" />
-                          </columns>
-                        </TableView>
-                        <Button fx:id="btnEliminarProducto" layoutX="222.0" layoutY="654.0" mnemonicParsing="false" onAction="#cliksIngresoProducCarga" prefHeight="53.0" prefWidth="156.0" stylesheets="@../css/style.css" text="Eliminar" />
-                        <Button fx:id="btnGuardarProductoInfo" layoutX="53.0" layoutY="654.0" mnemonicParsing="false" onAction="#cliksIngresoProducCarga" prefHeight="53.0" prefWidth="156.0" stylesheets="@../css/style.css" text="Guardar" />
-                        <Separator layoutX="19.0" layoutY="624.0" prefHeight="9.0" prefWidth="976.0" />
-                        <TextField fx:id="subTotalProductos" layoutX="446.0" layoutY="650.0" prefHeight="62.0" prefWidth="279.0" promptText="Hora" style="-fx-prompt-text-fill: WHITE; -fx-text-fill: WHITE; -fx-font-size: 3em;" stylesheets="@../css/style.css" text="Sub Total" />
-                     </children>
-                  </Pane>
-                  <Pane fx:id="pnFactura" prefHeight="309.0" prefWidth="450.0" style="-fx-background-color: #02030A;">
-                     <children>
-                        <Label layoutX="57.0" layoutY="25.0" text="Facturas" textFill="#e7e5e5">
-                           <font>
-                              <Font size="24.0" />
-                           </font>
-                        </Label>
-                        <HBox alignment="CENTER_LEFT" layoutX="46.0" layoutY="102.0" prefHeight="92.0" prefWidth="813.0" spacing="50.0">
-                           <children>
-                              <VBox alignment="CENTER" prefHeight="92.0" prefWidth="142.0">
-                                 <children>
-                                    <TextField fx:id="nombreProduCar1" prefHeight="26.0" prefWidth="128.0" promptText="Carga.." stylesheets="@../css/style.css">
-                                       <font>
-                                          <Font size="15.0" />
-                                       </font>
-                                    </TextField>
-                                    <Label prefHeight="18.0" prefWidth="112.0" text="Nombre Producto" textFill="#e7e5e5" />
-                                 </children>
-                              </VBox>
-                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
-                                 <children>
-                                    <TextField fx:id="costoUnitarioCar1" promptText="Carga.." stylesheets="@../css/style.css">
-                                       <font>
-                                          <Font size="15.0" />
-                                       </font>
-                                    </TextField>
-                                    <Label prefHeight="21.0" prefWidth="111.0" text="Costo Unitario" textAlignment="CENTER" textFill="#e7e5e5" />
-                                 </children>
-                              </VBox>
-                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
-                                 <children>
-                                    <TextField fx:id="fechaIngresoCar1" prefHeight="29.0" prefWidth="141.0" promptText="Carga.." stylesheets="@../css/style.css">
-                                       <font>
-                                          <Font size="15.0" />
-                                       </font>
-                                    </TextField>
-                                    <Label text="Fecha Ingreso" textAlignment="CENTER" textFill="#e7e5e5" />
-                                 </children>
-                              </VBox>
-                              <VBox alignment="CENTER" prefHeight="92.0" prefWidth="151.0">
-                                 <children>
-                                    <TextField fx:id="cantidadCar1" prefHeight="29.0" prefWidth="96.0" promptText="Carga.." stylesheets="@../css/style.css">
-                                       <font>
-                                          <Font size="15.0" />
-                                       </font>
-                                    </TextField>
-                                    <Label text="Cantidad" textFill="#e7e5e5" />
-                                 </children>
-                              </VBox>
-                           </children>
-                        </HBox>
-                        <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="908.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/icons8_Search_52px.png" />
-                           </image>
-                        </ImageView>
-                        <Button fx:id="almacenarVIstaProducto1" layoutX="739.0" layoutY="132.0" mnemonicParsing="false" onAction="#cliksIngresoProducCarga" prefHeight="33.0" prefWidth="123.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20; -fx-background-color: transparent;" stylesheets="@../css/style.css" text="Almacenar" textAlignment="RIGHT" />
-                        <TextField fx:id="buscarProducto1" layoutX="608.0" layoutY="29.0" prefHeight="42.0" prefWidth="336.0" promptText="Buscar Producto" style="-fx-background-color: #02030A; -fx-border-color: #B7C3D7; -fx-border-radius: 2em; -fx-text-fill: WHITE;">
-                           <font>
-                              <Font size="20.0" />
+                              <Font size="15.0" />
                            </font>
                         </TextField>
-                        <TableView fx:id="tablaInfo1" layoutX="57.0" layoutY="217.0" prefHeight="392.0" prefWidth="777.0" stylesheets="@../css/style.css">
-                           <columns>
-                              <TableColumn fx:id="codigoPorducto1" prefWidth="135.0" text="Codigo Producto" />
-                              <TableColumn fx:id="NombreProducto1" minWidth="0.0" prefWidth="242.0" text="Nombre Producto" />
-                              <TableColumn fx:id="precioUnitario1" prefWidth="128.0" text="Precio Unitario" />
-                              <TableColumn fx:id="cantidad1" prefWidth="135.0" text="cantidad" />
-                              <TableColumn fx:id="total1" prefWidth="135.0" text="Total" />
-                           </columns>
-                        </TableView>
-                        <Button fx:id="btnEliminarProducto1" layoutX="222.0" layoutY="654.0" mnemonicParsing="false" onAction="#cliksIngresoProducCarga" prefHeight="53.0" prefWidth="156.0" stylesheets="@../css/style.css" text="Eliminar" />
-                        <Button fx:id="btnGuardarProductoInfo1" layoutX="53.0" layoutY="654.0" mnemonicParsing="false" onAction="#cliksIngresoProducCarga" prefHeight="53.0" prefWidth="156.0" stylesheets="@../css/style.css" text="Guardar" />
-                        <Separator layoutX="19.0" layoutY="624.0" prefHeight="9.0" prefWidth="976.0" />
-                        <TextField fx:id="subTotalProductos1" layoutX="446.0" layoutY="650.0" prefHeight="62.0" prefWidth="279.0" promptText="Hora" style="-fx-prompt-text-fill: WHITE; -fx-text-fill: WHITE; -fx-font-size: 3em;" stylesheets="@../css/style.css" text="Sub Total" />
-                     </children>
-                  </Pane>
-               </children>
-            </StackPane>
-         </children>
-         <effect>
-            <DropShadow color="#1b1eeb" />
-         </effect>
-      </AnchorPane>
-   </children>
+                        <Label layoutX="393.0" layoutY="93.0" prefHeight="18.0" prefWidth="297.0" text="Direccion de clientes" textFill="#e7e5e5" />
+                        <Label layoutX="61.0" layoutY="167.0" prefHeight="18.0" prefWidth="297.0" text="Telefono del Cliente" textFill="#e7e5e5" />
+                        <TextField fx:id="telefonoCliente" layoutX="53.0" layoutY="130.0" prefHeight="29.0" prefWidth="297.0" promptText="Carga de datos..." stylesheets="@../css/style.css">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="706.0" layoutY="132.0" prefHeight="26.0" prefWidth="89.0" style="-fx-prompt-text-fill: white;" text="dd-mm-yyyy" />
+                        <DatePicker fx:id="fechaFactura" layoutX="401.0" layoutY="132.0" prefHeight="26.0" prefWidth="289.0" promptText="Fecha de creacion" stylesheets="@../css/style.css" />
+                        <Label layoutX="655.0" layoutY="21.0" prefHeight="18.0" prefWidth="149.0" text="CODIGO FACTURA" textFill="#e7e5e5" />
+                        <Label fx:id="codigoFactura" layoutX="790.0" layoutY="20.0" prefHeight="18.0" prefWidth="123.0" text="0" textFill="#e7e5e5" />
+                            </children>
+                        </Pane>
+                    </children>
+                </StackPane>
+            </children>
+            <effect>
+                <DropShadow color="#1b1eeb" />
+            </effect>
+        </AnchorPane>
+    </children>
 </StackPane>

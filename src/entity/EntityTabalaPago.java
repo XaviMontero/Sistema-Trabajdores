@@ -14,13 +14,13 @@ public class EntityTabalaPago {
     private SimpleStringProperty totalMinutos;
     private SimpleDoubleProperty totalPago;
 
-    public EntityTabalaPago(String fecha, String trasaccion, double totalPago, String horaEntrada, String horaSalida, String totalHoras,String totalMinutos) {
+    public EntityTabalaPago(String fecha, String trasaccion, double totalPago, String horaEntrada, String horaSalida, String totalHoras, String totalMinutos) {
         this.fecha = new SimpleStringProperty(fecha);
-        this.codigo =new SimpleStringProperty(trasaccion) ;
+        this.codigo = new SimpleStringProperty(trasaccion);
         this.totalPago = new SimpleDoubleProperty(totalPago);
-        this.horaEntrada=new SimpleStringProperty(horaEntrada);
-        this.horaSalida=new SimpleStringProperty(horaSalida);
-        this.totalHoras= new SimpleStringProperty(totalHoras);
+        this.horaEntrada = new SimpleStringProperty(horaEntrada);
+        this.horaSalida = new SimpleStringProperty(horaSalida);
+        this.totalHoras = new SimpleStringProperty(totalHoras);
         this.totalMinutos = new SimpleStringProperty(totalMinutos);
     }
 
@@ -28,12 +28,12 @@ public class EntityTabalaPago {
         return totalMinutos.get();
     }
 
-    public SimpleStringProperty totalMinutosProperty() {
-        return totalMinutos;
-    }
-
     public void setTotalMinutos(String totalMinutos) {
         this.totalMinutos.set(totalMinutos);
+    }
+
+    public SimpleStringProperty totalMinutosProperty() {
+        return totalMinutos;
     }
 
     public SimpleStringProperty codigoProperty() {
@@ -48,36 +48,36 @@ public class EntityTabalaPago {
         return horaEntrada.get();
     }
 
-    public SimpleStringProperty horaEntradaProperty() {
-        return horaEntrada;
-    }
-
     public void setHoraEntrada(String horaEntrada) {
         this.horaEntrada.set(horaEntrada);
+    }
+
+    public SimpleStringProperty horaEntradaProperty() {
+        return horaEntrada;
     }
 
     public String getHoraSalida() {
         return horaSalida.get();
     }
 
-    public SimpleStringProperty horaSalidaProperty() {
-        return horaSalida;
-    }
-
     public void setHoraSalida(String horaSalida) {
         this.horaSalida.set(horaSalida);
+    }
+
+    public SimpleStringProperty horaSalidaProperty() {
+        return horaSalida;
     }
 
     public String getTotalHoras() {
         return totalHoras.get();
     }
 
-    public SimpleStringProperty totalHorasProperty() {
-        return totalHoras;
-    }
-
     public void setTotalHoras(String totalHoras) {
         this.totalHoras.set(totalHoras);
+    }
+
+    public SimpleStringProperty totalHorasProperty() {
+        return totalHoras;
     }
 
     public SimpleDoubleProperty totalPagoProperty() {

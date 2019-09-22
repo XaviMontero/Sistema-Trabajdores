@@ -11,12 +11,11 @@ import java.util.Locale;
 public class Global {
 
 
+    public static Conection CONEXION = new Conection();
+    public static String formato;
 
-    public static Conection CONEXION =new Conection();
-    public static  String formato;
 
-
-    public static Date getFechaActual (){
+    public static Date getFechaActual() {
 
 
         Date date = new Date();
@@ -30,32 +29,47 @@ public class Global {
             e.printStackTrace();
         }
 
-        return  date;
+        return date;
     }
 
-    public static Date getHoraActual (){
+    public static Date getHoraActual() {
 
 
         Date date = new Date();
         try {
 
 //Caso 1: obtener la hora y salida por pantalla con formato:
-            DateFormat hourFormat = new SimpleDateFormat("HH:mm:ss",Locale.US);
-            System.out.println("Hora: " + hourFormat.format(date));
+            DateFormat hourFormat = new SimpleDateFormat("HH:mm:ss", Locale.US);
 
             date = hourFormat.parse(hourFormat.format(date));
         } catch (ParseException e) {
             e.printStackTrace();
         }
 
-        return  date;
+        return date;
+    }
+
+    public static Date getMyHora(String hora) {
+
+
+        Date date = null;
+        try {
+
+            DateFormat hourFormat = new SimpleDateFormat("HH:mm:ss", Locale.US);
+            System.out.println("Hora: " + hourFormat.parse(hora));
+
+            date = hourFormat.parse(hora);
+        } catch (ParseException e) {
+
+        }
+
+        return date;
     }
 
 
-    public static Date getFechaFormato(String dateInString){
+    public static Date getFechaFormato(String dateInString) {
 
-        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd",Locale.US);
-
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd", Locale.US);
 
 
         Date date = null;
@@ -72,16 +86,15 @@ public class Global {
         return date;
     }
 
-    public static int obtenerAnio(Date date){
+    public static int obtenerAnio(Date date) {
 
-        if (null == date){
+        if (null == date) {
 
             return 0;
 
-        }
-        else{
+        } else {
 
-            formato="yyyy";
+            formato = "yyyy";
             SimpleDateFormat dateFormat = new SimpleDateFormat(formato);
             return Integer.parseInt(dateFormat.format(date));
 
@@ -89,80 +102,79 @@ public class Global {
 
     }
 
-    public static int obtenerDia(Date date){
+    public static int obtenerDia(Date date) {
 
-        if (null == date){
+        if (null == date) {
 
             return 0;
 
-        }
-        else{
+        } else {
 
-            formato="dd";
+            formato = "dd";
             SimpleDateFormat dateFormat = new SimpleDateFormat(formato);
             return Integer.parseInt(dateFormat.format(date));
 
         }
 
     }
-    public static int obtenerMes(Date date){
 
-        if (null == date){
+    public static int obtenerMes(Date date) {
+
+        if (null == date) {
 
             return 0;
 
-        }
-        else{
+        } else {
 
-            formato="MM";
+            formato = "MM";
             SimpleDateFormat dateFormat = new SimpleDateFormat(formato);
             return Integer.parseInt(dateFormat.format(date));
 
         }
 
     }
-    public static int obtenerhoras(Date date){
 
-        if (null == date){
+    public static int obtenerhoras(Date date) {
+
+        if (null == date) {
 
             return 0;
 
-        }
-        else{
+        } else {
 
-            formato="HH";
+            formato = "HH";
             SimpleDateFormat dateFormat = new SimpleDateFormat(formato);
             return Integer.parseInt(dateFormat.format(date));
 
         }
 
     }
-    public static int obtenerMinutos(Date date){
 
-        if (null == date){
+    public static int obtenerMinutos(Date date) {
+
+        if (null == date) {
 
             return 0;
 
-        }
-        else{
+        } else {
 
-            formato="mm";
+            formato = "mm";
             SimpleDateFormat dateFormat = new SimpleDateFormat(formato);
             return Integer.parseInt(dateFormat.format(date));
 
         }
 
     }
-    public static int obtenerSegundos(Date date){
 
-        if (null == date){
+    public static int obtenerSegundos(Date date) {
+
+        if (null == date) {
 
             return 0;
 
-        }
-        else{
+        } else {
 
-            formato="ss";
+            formato = "ss";
             SimpleDateFormat dateFormat = new SimpleDateFormat(formato);
             return Integer.parseInt(dateFormat.format(date));
 

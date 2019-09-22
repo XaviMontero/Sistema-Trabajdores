@@ -6,17 +6,15 @@ import com.jfoenix.controls.JFXDialogLayout;
 import javafx.scene.effect.BoxBlur;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.Border;
 import javafx.scene.layout.StackPane;
-import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public class MessageError {
-    public  static AtomicBoolean ESTADO = new AtomicBoolean(false);
+    public static AtomicBoolean ESTADO = new AtomicBoolean(false);
 
-    public static  AtomicBoolean error355(AnchorPane root, StackPane rootPane, String mesaje, String titulo){
+    public static AtomicBoolean error355(AnchorPane root, StackPane rootPane, String mesaje, String titulo) {
 
         BoxBlur blur = new BoxBlur(3, 3, 3);
         JFXDialogLayout dialogLayout = new JFXDialogLayout();
@@ -46,7 +44,7 @@ public class MessageError {
 
 
         dialogLayout.setBody(new Text(mesaje));
-        dialogLayout.setActions(button,buttonCancelar);
+        dialogLayout.setActions(button, buttonCancelar);
 
 
         dialog.show();

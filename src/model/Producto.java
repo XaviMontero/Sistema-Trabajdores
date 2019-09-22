@@ -8,22 +8,23 @@ import java.util.List;
 @Table
 public class Producto {
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
-    private  int codigoTra;
+    private int codigoTra;
     @Column
-    private  String nombreProduc;
+    private String nombreProduc;
     @Column
-    private  double precioUnita;
+    private double precioUnita;
     @Column
-    private  String fechaProdu;
+    private String fechaProdu;
 
 
     @OneToMany(fetch = FetchType.LAZY)
     private List<InformesProducto> informesProductos;
 
-    public Producto() {
-    }
+    @OneToMany(fetch = FetchType.LAZY)
+    private List<FacturaDetalle> facturaDetalles;
+
 
     public int getCodigoTra() {
         return codigoTra;
@@ -63,5 +64,13 @@ public class Producto {
 
     public void setInformesProductos(List<InformesProducto> informesProductos) {
         this.informesProductos = informesProductos;
+    }
+
+    public List<FacturaDetalle> getFacturaDetalles() {
+        return facturaDetalles;
+    }
+
+    public void setFacturaDetalles(List<FacturaDetalle> facturaDetalles) {
+        this.facturaDetalles = facturaDetalles;
     }
 }
